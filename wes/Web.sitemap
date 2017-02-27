@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="http://www.worldexercisesystem.com" title="World Exercise System"  description="Earn your Certified Personal Trainer Certificate with World Exercise System. Most sites only require you to pass a test to receive a certificate showing you have the knowledge. World Exercise Systems requires passing a test as well, but we also require a personal workout video to show that you can teach people the proper techniques. This shows that not only do you know the terminology, but you know how to properly use the techniques with your clients.">
+        <siteMapNode url="http://www.worldexercisesystem.com/AboutUs.aspx" title="About World Exercise System"  description="About World Exercise System and our Certified Personal Trainer Certificate test" />
+        <siteMapNode url="http://www.worldexercisesystem.com/Mission.aspx" title="Our Mission Statement"  description="World Exercise System exists to empower anyone that desires a career in personal training by tapping into their passion for fitness, showing them how to properly train others and how to run their own business." />
+        <siteMapNode url="http://www.worldexercisesystem.com/FAQ.aspx" title="Frequently Asked Questions"  description="Frequently Asked Questions about World Exercise System" />
+        <siteMapNode url="http://www.worldexercisesystem.com/Testimonials.aspx" title="Testimonials"  description="Testimonials for World Exercise System" />
+        <siteMapNode url="http://www.worldexercisesystem.com/BecomeCPT.aspx" title="How to Become a CPT"  description="At World Exercise System, we will teach you a lot of great information about personal training and working out. Our personal training certification encompasses all areas of fitness, from training athletes to senior citizens along with how to run your own personal training business." />
+        <siteMapNode url="http://www.worldexercisesystem.com/PaymentPlans.aspx" title="Payment Options"  description="Availble Payment Options for World Exercise System's Certified Personal Trainer Certificate Exam" />
+        <siteMapNode url="http://www.worldexercisesystem.com/Manage/ManageAccount.aspx" title="Account Management"  description="Manage your Account" />
+        <siteMapNode url="http://www.worldexercisesystem.com/Members/StudyGuide.aspx" title="CPT Study Guide"  description="If you wish to study for the Personal Trainer Certification, then you can download the Study Guide here." />
+        <siteMapNode url="http://www.worldexercisesystem.com/Members/EBook.aspx" title="World Exercise System's E-Book"  description="If you wish to learn more about being a Certified Personal Trainer, then you can read our E-Book, available to members." />
+    </siteMapNode>
+</siteMap>

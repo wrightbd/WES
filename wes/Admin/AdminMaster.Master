@@ -1,0 +1,145 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="AdminMaster.master.vb" Inherits="WES.AdminMaster" %>
+<%@ Register TagPrefix="WES" TagName="WESLoginControl" Src="~/Controls/WESLoginControl.ascx" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>World Exercise System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+
+    <script src="../js/vendor/jquery-1.11.3.js"></script>
+    <script src="../js/vendor/bootstrap.js"></script>
+    <script src="../js/vendor/jquery-ui.js"></script>
+
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/jquery-ui.css" rel="stylesheet" />
+    <link href="../css/jquery-ui.structure.css" rel="stylesheet" />
+
+    <script src="https://use.typekit.net/wkx6ugm.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <meta name="robots" content="noindex, nofollow, nosnippet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        
+        <div class="navbar navbar-default">
+            <div class="container">
+                <a runat="server" class="navbar-brand" href="~/Default.aspx">World Exercise Systems</a>
+                <div class="jumbotron">
+                    <div class="slide slide1">
+                        <br /><br /><br /><br /><br />
+                        <h1 class="jumbotron-h1">PERSONAL TRAINING CERTIFICATION COMPANY</h1>
+                    </div>
+                </div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav main-nav">
+                        <li>
+                            <a runat="server" href="~/Default.aspx">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a runat="server" href="~/AboutUs.aspx">About Us<span class="caret"></span></a>
+                            <ul class="dropdown-menu subnav">
+                                <li><a href="~/AboutUs.aspx" runat="server">About Us</a></li>
+                                <li><a href="~/Mission.aspx" runat="server">Mission Statement</a></li>
+                                <li><a href="~/FAQ.aspx" runat="server">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a runat="server" href="~/Testimonials.aspx">Professional Recognitions<span class="caret"></span></a>
+                            <ul class="dropdown-menu subnav">
+                                <li><a href="~/Testimonials.aspx#chetk" runat="server">Chat Kleinpeter</a></li>
+                                <li><a href="~/Testimonials.aspx#joem" runat="server">Joe Martin</a></li>
+                                <li><a href="~/Testimonials.aspx#billyp" runat="server">Billy Potter</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a runat="server">Certificate<span class="caret"></span></a>
+                            <ul class="dropdown-menu subnav">
+                                <li><a href="~/BecomeCPT.aspx" runat="server">How to become a CPT</a></li>
+                                <li><a href="~/PaymentPlans.aspx" runat="server">Payment Options</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="liMember" runat="server">
+                            <a runat="server">Member<span class="caret"></span></a>
+                            <ul class="dropdown-menu subnav">
+                                <li><a href="~/Members/StudyGuide.aspx" runat="server">Study Guide</a></li>
+                                <li><a href="~/Members/EBook.aspx" runat="server">E-Book</a></li>
+                                <li id="itemTest" runat="server"><a href="~/Members/WESPTC.aspx" runat="server">Test</a></li>
+                                <li><a href="~/Members/Videos.aspx" runat="server">Video Submission</a></li>
+                                <li><a href="~/Members/MediaCenter.aspx" runat="server">Media Center</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="liAdmin" runat="server">
+                            <a runat="server">Admin <span class="caret"></span></a>
+                            <ul class="dropdown-menu subnav">
+                                <li><a href="~/Admin/WesTrainees.aspx" runat="server">Trainees</a></li>
+                                <li><a href="~/Admin/WesTraineeVideos.aspx" runat="server">Trainee Videos</a></li>
+                                <li><a href="~/Admin/WesTests.aspx" runat="server">Tests</a></li>
+                                <li><a href="~/Admin/WesTestQuestions.aspx" runat="server">Test Questions</a></li>
+                                <li><a href="~/Admin/WesOrders.aspx" runat="server">Orders</a></li>
+                                <li><a href="~/Admin/WesPromoCode.aspx" runat="server">Promo Codes</a></li>
+                                <li><a href="~/Admin/WesMediaCenter.aspx" runat="server">Media Center</a></li>
+                                <li><a href="~/Admin/WesItems.aspx" runat="server">Miscellaneous Items</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="liManage" runat="server">
+                            <a runat="server" href="~/Manage/ManageAccount.aspx">My Account</a>
+                        </li>
+                        <li id="liSignIn" runat="server" class="dropdown">
+                            <a href="~/Login.aspx" runat="server">Sign in</a>
+                            <ul class="dropdown-menu subnav">
+                                <li>
+                                    <div class="panel panel-info">
+                                        <div class="panel-heading">
+                                            <h4><asp:HyperLink ID="linkCreateAccount" runat="server" NavigateUrl="https://www.worldexercisesystem.com/CreateAccount.aspx" ForeColor="#7D868C">Create Account</asp:HyperLink></h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <WES:WESLoginControl ID="WESLoginControlMenu" runat="server" ShowCreateAccount="False" />
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="liSignOut" runat="server"><a href="~/Logout.aspx" runat="server">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-bodyfooter">
+                        <div class="panel-heading text-right">
+                            <small><b>&copy;2016 | World Exercise System</b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

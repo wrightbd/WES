@@ -1,0 +1,8 @@
+﻿body {
+}
+
+.header-top { background: #8d0006; }
+.contact { float: right;margin: 0;padding: 6px 0;}
+.contact li { list-style: none; display: inline-block;color: #fff;}
+.contact li:last-child { margin-left: 12px;}
+.contact li a { color: #fff;}
