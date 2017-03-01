@@ -119,6 +119,7 @@
     <Content Include="apple-touch-icon.png" />
     <Content Include="BecomeCPT.aspx" />
     <Content Include="ChoosePlan.aspx" />
+    <Content Include="ContactUs.aspx" />
     <Content Include="css\images\HomeBackground.jpg" />
     <Content Include="css\images\HomeBackground_Old.jpg" />
     <Content Include="css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -155,6 +156,8 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\01.jpg" />
+    <Content Include="images\banner2.jpg" />
     <Content Include="images\BillyPotter.jpeg" />
     <Content Include="images\Carousel1.jpg" />
     <Content Include="images\Carousel2.jpg" />
@@ -189,6 +192,7 @@
     <Content Include="Members\Videos.aspx" />
     <Content Include="Members\WESPTC.aspx" />
     <Content Include="Mission.aspx" />
+    <Content Include="OurTrainers.aspx" />
     <Content Include="PaymentPlans.aspx" />
     <Content Include="PurchaseComplete.aspx" />
     <Content Include="Admin\AdminMaster.Master" />
@@ -303,6 +307,13 @@
     </Compile>
     <Compile Include="ChoosePlan.aspx.vb">
       <DependentUpon>ChoosePlan.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.vb">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.vb">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Controls\WESLoginControl.ascx.designer.vb">
@@ -439,6 +450,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="OurTrainers.aspx.designer.vb">
+      <DependentUpon>OurTrainers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OurTrainers.aspx.vb">
+      <DependentUpon>OurTrainers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="PaymentPlans.aspx.designer.vb">
       <DependentUpon>PaymentPlans.aspx</DependentUpon>
     </Compile>
@@ -492,6 +510,7 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\PublishProfiles\local.pubxml" />
     <None Include="My Project\PublishProfiles\WES.pubxml" />
     <None Include="My Project\PublishProfiles\worldexercisesystem.com - Web Deploy.pubxml" />
     <None Include="My Project\Settings.settings">

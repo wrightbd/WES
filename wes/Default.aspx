@@ -98,7 +98,7 @@
     <div id="call-to-action">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 call-to-action">
+                <div class="col-xs-12 col-sm-10 col-md-8 center-block call-to-action">
                     <h2>Whether you're wanting to gain knowledge for your own fitness program.....
                         Getting started as a fitness professional or an experienced trainer seeking to upgrade your skills.....
                         World Exercise System provides a functional and proven skillset to take you to the next level.</h2>

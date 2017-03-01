@@ -14,13 +14,13 @@
     <link href="css/bootstrap-theme.css?20160825" rel="stylesheet" />
     <%--<link href="css/main.css?20160825" rel="stylesheet" />--%>
     <link href="css/wes.css?20160825" rel="stylesheet" />
-    
+
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Roboto+Condensed:300i,400|Roboto:400,500" rel="stylesheet">
 
     <%--<script src="https://use.typekit.net/wkx6ugm.js"></script>
     <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>--%>
-    
+
     <script src="js/vendor/jquery-1.11.3.js"></script>
     <script src="js/vendor/bootstrap.js"></script>
     <script src="https://use.fontawesome.com/098d9ea3a8.js"></script>
@@ -65,14 +65,13 @@
 
             <div class="navbar navbar-default">
                 <div class="container">
-                    <a runat="server" class="navbar-brand" href="~/Default.aspx">World Exercise Systems</a>
-
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
+                        <a runat="server" class="navbar-brand" href="~/Default.aspx">World Exercise Systems</a>
                     </div>
                     <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav main-nav">
@@ -80,38 +79,36 @@
                                 <a runat="server" href="~/Default.aspx">Home</a>
                             </li>
                             <li class="dropdown">
-                                <a runat="server" href="~/AboutUs.aspx">About Us<span class="caret"></span></a>
+                                <a runat="server">About Us<span class="caret"></span></a>
                                 <ul class="dropdown-menu subnav">
-                                    <li><a href="~/AboutUs.aspx" runat="server">About Us</a></li>
-                                    <li><a href="~/Mission.aspx" runat="server">Mission Statement</a></li>
+                                    <li><a href="~/AboutUs.aspx" runat="server">About the Company</a></li>
+                                    <li><a href="~/OurTrainers.aspx" runat="server">Our Trainers</a></li>
+                                    <li><a href="~/Testimonials.aspx" runat="server">Testimonials</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a runat="server">Become a Trainer<span class="caret"></span></a>
+                                <ul class="dropdown-menu subnav">
                                     <li><a href="~/FAQ.aspx" runat="server">FAQ</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a runat="server" href="~/Testimonials.aspx">Professional Recognitions<span class="caret"></span></a>
-                                <ul class="dropdown-menu subnav">
-                                    <li><a href="~/Testimonials.aspx#chetk" runat="server">Chat Kleinpeter</a></li>
-                                    <li><a href="~/Testimonials.aspx#joem" runat="server">Joe Martin</a></li>
-                                    <li><a href="~/Testimonials.aspx#billyp" runat="server">Billy Potter</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a runat="server">Certificate<span class="caret"></span></a>
-                                <ul class="dropdown-menu subnav">
-                                    <li><a href="~/BecomeCPT.aspx" runat="server">How to become a CPT</a></li>
-                                    <li><a href="~/PaymentPlans.aspx" runat="server">Payment Options</a></li>
+                                    <li><a href="~/BecomeCPT.aspx" runat="server">Get Certified</a></li>
+                                    <li><a href="~/PaymentPlans.aspx" runat="server">Make a Payment</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown" id="liMember" runat="server">
-                                <a runat="server">Member<span class="caret"></span></a>
+                                <a runat="server">Member Services<span class="caret"></span></a>
                                 <ul class="dropdown-menu subnav">
-                                    <li><a href="~/Members/StudyGuide.aspx" runat="server">Study Guide</a></li>
                                     <li><a href="~/Members/EBook.aspx" runat="server">E-Book</a></li>
-                                    <li id="itemTest" runat="server"><a href="~/Members/WESPTC.aspx" runat="server">Test</a></li>
-                                    <li><a href="~/Members/Videos.aspx" runat="server">Video Submission</a></li>
+                                    <li><a href="~/Members/StudyGuide.aspx" runat="server">Study Guide</a></li>
+                                    <li><a href="~/Members/Videos.aspx" runat="server">Videos</a></li>
                                     <li><a href="~/Members/MediaCenter.aspx" runat="server">Media Center</a></li>
+                                    <li id="itemTest" runat="server"><a href="~/Members/WESPTC.aspx" runat="server">Test</a></li>
                                 </ul>
                             </li>
+                            <li>
+                                <a runat="server" href="~/ContactUs.aspx">Contact Us</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown" id="liAdmin" runat="server">
                                 <a runat="server">Admin <span class="caret"></span></a>
                                 <ul class="dropdown-menu subnav">
@@ -125,26 +122,18 @@
                                     <li><a href="~/Admin/WesItems.aspx" runat="server">Miscellaneous Items</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown" id="liManage" runat="server">
-                                <a runat="server" href="~/Manage/ManageAccount.aspx">My Account</a>
-                            </li>
-                            <li id="liSignIn" runat="server" class="dropdown">
-                                <a href="~/Login.aspx" runat="server">Sign in</a>
+                            <li id="liManage" runat="server" class="dropdown">
+                                <a runat="server" href="~/Manage/ManageAccount.aspx">My Account<span class="caret"></span></a>
                                 <ul class="dropdown-menu subnav">
-                                    <li>
-                                        <div class="panel panel-darkblue">
-                                            <div class="panel-heading">
-                                                <asp:HyperLink ID="linkCreateAccount" runat="server" NavigateUrl="https://www.worldexercisesystem.com/CreateAccount.aspx" ForeColor="white"><h3>Create Account</h3></asp:HyperLink>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <WES:WESLoginControl ID="WESLoginControlMenu" runat="server" ShowCreateAccount="False" />
-                                    </li>
+                                    <li id="liSignOut" runat="server"><a href="~/Logout.aspx" runat="server">Sign out</a></li>
                                 </ul>
                             </li>
-                            <li id="liSignOut" runat="server"><a href="~/Logout.aspx" runat="server">Sign out</a></li>
-                            
+                            <li id="liSignIn" runat="server">
+                                <a href="~/Login.aspx" runat="server">Sign in</a>
+                            </li>
+                            <li>
+                                <asp:HyperLink ID="linkCreateAccount" runat="server" NavigateUrl="https://www.worldexercisesystem.com/CreateAccount.aspx">Register</asp:HyperLink>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -153,7 +142,7 @@
         </header>
 
         <asp:ContentPlaceHolder ID="MainContent" runat="server" />
-       
+
 
         <%--<div class="container">
             <div class="row">

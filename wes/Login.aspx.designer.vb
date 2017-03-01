@@ -21,4 +21,13 @@ Partial Public Class Login
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents WESLoginControl1 As Global.WES.WESLoginControl
+    
+    '''<summary>
+    '''linkCreateAccount control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents linkCreateAccount As Global.System.Web.UI.WebControls.HyperLink
 End Class

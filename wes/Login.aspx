@@ -8,6 +8,7 @@
     <div class="row">
         <div class="col-sm-12 form-group">
             <WES:WESLoginControl ID="WESLoginControl1" runat="server" />
+            Need an account? <asp:HyperLink ID="linkCreateAccount" runat="server" NavigateUrl="https://www.worldexercisesystem.com/CreateAccount.aspx">Create one now.</asp:HyperLink>
         </div>
     </div>
 </asp:Content>
