@@ -148,6 +148,7 @@
     <Content Include="css\main.css" />
     <Content Include="css\normalize.css" />
     <Content Include="css\pushy.css" />
+    <Content Include="css\wes.css" />
     <Content Include="Default.aspx" />
     <Content Include="Default2.aspx" />
     <Content Include="FAQ.aspx" />
@@ -170,6 +171,7 @@
     <Content Include="img\brand_paypal.png" />
     <Content Include="img\jumbo-img.jpg" />
     <Content Include="img\paypalheader.jpg" />
+    <Content Include="img\WES-logo.png" />
     <Content Include="js\jquery.bxslider.js" />
     <Content Include="js\main.js" />
     <Content Include="js\vendor\bootstrap.js" />
