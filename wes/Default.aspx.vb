@@ -7,9 +7,9 @@ Public Class _Default
     ReadOnly zVarLoginSession As New ClsLoginUser_Session
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        pnlMember.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.EmailStatus <> 0
+        'pnlMember.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.EmailStatus <> 0
 
-        pnlTest.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.TestAvailable = 1
+        'pnlTest.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.TestAvailable = 1
     End Sub
 
 End Class

@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="World Exercise System" Language="vb" AutoEventWireup="false" MasterPageFile="~/SiteMaster.Master" CodeBehind="Default.aspx.vb" Inherits="WES._Default" %>
-
 <%@ Register TagPrefix="WES" TagName="WESLoginControl" Src="~/Controls/WESLoginControl.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -7,78 +6,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <style>
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            padding-top: 30px;
-            height: 0;
-            overflow: hidden;
-        }
-
-            .video-container iframe, .video-container object, .video-container embed {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
-    </style>
-
-
-    <asp:Panel ID="pnlMember" runat="server" Visible="false">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h4>Member Quick Links</h4>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-sm-2">
-                            <a class="btn btn-darkblue btn-lg btn-block" role="button" href="~/Members/EBook.aspx" runat="server">
-                                <br />
-                                <span class="glyphicon glyphicon-book"></span>
-                                <br />
-                                E-Book</a>
-                        </div>
-                        <div class="col-sm-2">
-                            <a class="btn btn-darkblue btn-lg btn-block" role="button" href="~/Members/StudyGuide.aspx" runat="server">
-                                <br />
-                                <span class="glyphicon glyphicon-folder-open"></span>
-                                <br />
-                                Study Guide</a>
-                        </div>
-                        <asp:Panel ID="pnlTest" runat="server" Visible="false">
-                            <div class="col-sm-2">
-                                <a class="btn btn-darkblue btn-lg btn-block" role="button" href="~/Members/WESPTC.aspx" runat="server">
-                                    <br />
-                                    <span class="glyphicon glyphicon-file"></span>
-                                    <br />
-                                    Test</a>
-                            </div>
-                        </asp:Panel>
-                        <div class="col-sm-2">
-                            <a class="btn btn-darkblue btn-lg btn-block" role="button" href="~/Members/Videos.aspx" runat="server"><span class="glyphicon glyphicon-cloud-upload"></span>
-                                <br />
-                                Video<br />
-                                Submission</a>
-                        </div>
-                        <div class="col-sm-2">
-                            <a class="btn btn-darkblue btn-lg btn-block" role="button" href="~/Members/MediaCenter.aspx" runat="server">
-                                <br />
-                                <span class="glyphicon glyphicon-film"></span>
-                                <br />
-                                Media Center</a>
-                        </div>
-                        <div class="col-sm-2">
-                            &nbsp;
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </asp:Panel>
-
+   
     <div id="banner">
         <img src="~/images/01.jpg" alt="World Exercise System" runat="server" />
         <div class="container">
@@ -102,12 +30,79 @@
                     <h2>Whether you're wanting to gain knowledge for your own fitness program.....
                         Getting started as a fitness professional or an experienced trainer seeking to upgrade your skills.....
                         World Exercise System provides a functional and proven skillset to take you to the next level.</h2>
-                    <a href="https://www.worldexercisesystem.com/CreateAccount.aspx" class="btn btn-get-started">Get Started</a>
+                    <a href="https://www.worldexercisesystem.com/CreateAccount.aspx" class="btn btn-alt">Get Started</a>
                 </div>
             </div>
         </div>
     </div>
-
-
+    
+    <div id="callout-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="callout-info-heading">World Exercise System is THE Right Choice for A Rewarding Career!</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="callout-info callout-info-01">
+                        <img src="~/images/info01.jpg" runat="server" class="img-rounded img-responsive" alt=""/>
+                        <div class="caption">
+                            <h3>An Industry Leader</h3>
+                            <p>World Exercise System is an industry leader when it comes to the Business of Personal Training.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="callout-info callout-info-02">
+                        <img src="~/images/info02.jpg" runat="server" class="img-rounded img-responsive" alt=""/>
+                        <div class="caption">
+                            <h3>Our Methodology</h3>
+                            <p>Our Methodology has been developed by personal trainers through the success of tens of thousands of training sessions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="callout-info callout-info-03">
+                        <img src="~/images/info03.jpg" runat="server" class="img-rounded img-responsive" alt=""/>
+                        <div class="caption">
+                            <h3>Client & Training Consistency</h3>
+                            <p>Our Program Development Model, 324-E, adapts to any fitness program which creates client training consistency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="banner-links" class="banner-links">
+        <div class="container">
+            <div class="row">
+                <%--<div class="col-md-4">
+                    <div class="member-links"></div>
+                </div>--%>
+                <div class="col-xs-12 col-md-8 center-block text-center">
+                    <h2>Get Certified Today!</h2>
+                    <p>We will show you how to prepare your clients for each workout. Each workout gets them ready for one thing; which is their next workout.  Our functional business skills are proven to increase sales, to create client fitness success and retention.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="video" class="certification-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-1">
+                    <h2>The BEST Choice for Certification</h2>
+                    <p>Designed by trainers with tens of thousands of client training sessions, the certification developer has more experience with personal training than other certification companies. WES has been in the scientific lab and the gym, for 12hours a day for 30 years. We still have clients that have trained with us consistantly for 30 years.</p>
+                </div>
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NKIX-u-pVDI?ecver=2" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </asp:Content>

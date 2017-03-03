@@ -12,22 +12,4 @@ Option Explicit On
 
 
 Partial Public Class _Default
-    
-    '''<summary>
-    '''pnlMember control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents pnlMember As Global.System.Web.UI.WebControls.Panel
-    
-    '''<summary>
-    '''pnlTest control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents pnlTest As Global.System.Web.UI.WebControls.Panel
 End Class

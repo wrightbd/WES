@@ -143,36 +143,47 @@
 
         <asp:ContentPlaceHolder ID="MainContent" runat="server" />
 
-
-        <%--<div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    &nbsp;
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 backgroundMainBlue">
-                    <div class="col-sm-8">
-                        <div class="panel panel-darkblue">
-                            <div class="panel-heading">
-                                <h4>Upcoming Events</h4>
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contact-us">
+                                <h3>Contact Us</h3>
+                                <p>
+                                    P.O. Box 77938<br />
+                                    Baton Rouge, LA 70817<br />
+                                    <span>225-525-2655</span><br />
+                                    <a href="mailto:wesptcertification@gmail.com">wesptcertification@gmail.com</a>
+                                </p>
                             </div>
-                            <div class="panel-body">
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div class="about-us">
+                                <h3>About Us</h3>
+                                <p>Our concept is simple yet effective. We have taken over 30 years to perfect what we do and we will teach you the same concepts which made us successful.</p>
+                                <a href="~/AboutUs.aspx" class="btn btn-alt" runat="server">Learn More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <h3 style="color: white;">Connect with us</h3>
-                        <a href="mailto:wesptcertification@gmail.com?subject=Question" class="btn btn-darkblue"><span class="glyphicon glyphicon-envelope"></span></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="copyright">
+                                Copyright 2017 &copy; World Exercise System
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="panel panel-bodyfooter">
-            <div class="panel-heading text-right">
-                <small><b>&copy;2016 | World Exercise System</b></small>
-            </div>
-        </div>--%>
+
+        </footer>
+
     </form>
 </body>
 </html>
