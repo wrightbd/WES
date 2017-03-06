@@ -158,6 +158,8 @@
     <Content Include="Global.asax" />
     <Content Include="images\01.jpg" />
     <Content Include="images\banner2.jpg" />
+    <Content Include="images\banner3.jpg" />
+    <Content Include="images\bg_footer.jpg" />
     <Content Include="images\BillyPotter.jpeg" />
     <Content Include="images\Carousel1.jpg" />
     <Content Include="images\Carousel2.jpg" />
@@ -165,6 +167,9 @@
     <Content Include="images\Carousel4.jpg" />
     <Content Include="images\ChatKleinpeter.JPG" />
     <Content Include="images\EdSchwartzenburg.JPG" />
+    <Content Include="images\info01.jpg" />
+    <Content Include="images\info02.jpg" />
+    <Content Include="images\info03.jpg" />
     <Content Include="images\JoeMartin.JPG" />
     <Content Include="images\personaltrainerback.jpg" />
     <Content Include="img\brand.png" />
