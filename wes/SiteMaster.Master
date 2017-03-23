@@ -1,28 +1,22 @@
 ﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="SiteMaster.master.vb" Inherits="WES.SiteMaster" %>
 
-<%@ Register TagPrefix="WES" TagName="WESLoginControl" Src="~/Controls/WESLoginControl.ascx" %>
-
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en-US">
 <head runat="server">
     <title>World Exercise System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-
-    <link href="css/bootstrap.css?20160825" rel="stylesheet" />
-    <link href="css/bootstrap-theme.css?20160825" rel="stylesheet" />
-    <%--<link href="css/main.css?20160825" rel="stylesheet" />--%>
+    
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Roboto+Condensed:300i,400|Roboto:400,500" rel="stylesheet">
+    <link href="css/bootstrap.min.css?20160825" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css?20160825" rel="stylesheet" />
     <link href="css/wes.css?20160825" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Roboto+Condensed:300i,400|Roboto:400,500" rel="stylesheet">
-
-    <%--<script src="https://use.typekit.net/wkx6ugm.js"></script>
-    <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>--%>
-
-    <script src="js/vendor/jquery-1.11.3.js"></script>
-    <script src="js/vendor/bootstrap.js"></script>
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.bootstrap-dropdown-hover.js"></script>
+    <script src="js/wes.js"></script>
     <script src="https://use.fontawesome.com/098d9ea3a8.js"></script>
 
     <script>
@@ -42,7 +36,6 @@
 
     <asp:ContentPlaceHolder ID="head" runat="server" />
 
-
     <meta name="keywords" content="fitness,personal training certification,personal trainer certification,fitness trainer,personal fitness trainer,best personal training certification,how to become a certified personal trainer,cpt certification,personal trainer certification online,how to become a personal trainer" />
 </head>
 <body>
@@ -55,8 +48,8 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <ul class="contact">
-                                <li><i class="fa fa-phone" aria-hidden="true"></i>1 225 525 2655</li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:wesptcertification@gmail.com">wesptcertification@gmail.com</a></li>
+                                <li><i class="fa fa-phone"></i> 1 225 525 2655</li>
+                                <li><i class="fa fa-envelope"></i> <a href="mailto:wesptcertification@gmail.com">wesptcertification@gmail.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -79,7 +72,7 @@
                                 <a runat="server" href="~/Default.aspx">Home</a>
                             </li>
                             <li class="dropdown">
-                                <a runat="server">About Us<span class="caret"></span></a>
+                                <a class="dropdown-toggle" data-toggle="dropdown">About Us<span class="caret"></span></a>
                                 <ul class="dropdown-menu subnav">
                                     <li><a href="~/AboutUs.aspx" runat="server">About the Company</a></li>
                                     <li><a href="~/OurTrainers.aspx" runat="server">Our Trainers</a></li>
@@ -87,7 +80,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a runat="server">Become a Trainer<span class="caret"></span></a>
+                                <a class="dropdown-toggle" data-toggle="dropdown">Become a Trainer<span class="caret"></span></a>
                                 <ul class="dropdown-menu subnav">
                                     <li><a href="~/FAQ.aspx" runat="server">FAQ</a></li>
                                     <li><a href="~/BecomeCPT.aspx" runat="server">Get Certified</a></li>
@@ -95,7 +88,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown" id="liMember" runat="server">
-                                <a runat="server">Member Services<span class="caret"></span></a>
+                                <a class="dropdown-toggle" data-toggle="dropdown">Member Services<span class="caret"></span></a>
                                 <ul class="dropdown-menu subnav">
                                     <li><a href="~/Members/EBook.aspx" runat="server">E-Book</a></li>
                                     <li><a href="~/Members/StudyGuide.aspx" runat="server">Study Guide</a></li>
@@ -110,7 +103,7 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown" id="liAdmin" runat="server">
-                                <a runat="server">Admin <span class="caret"></span></a>
+                                <a class="dropdown-toggle" data-toggle="dropdown">Admin <span class="caret"></span></a>
                                 <ul class="dropdown-menu subnav">
                                     <li><a href="~/Admin/WesTrainees.aspx" runat="server">Trainees</a></li>
                                     <li><a href="~/Admin/WesTraineeVideos.aspx" runat="server">Trainee Videos</a></li>
@@ -123,8 +116,9 @@
                                 </ul>
                             </li>
                             <li id="liManage" runat="server" class="dropdown">
-                                <a runat="server" href="~/Manage/ManageAccount.aspx">My Account<span class="caret"></span></a>
+                                <a class="dropdown-toggle" data-toggle="dropdown">My Account<span class="caret"></span></a>
                                 <ul class="dropdown-menu subnav">
+                                    <li><a href="~/Manage/ManageAccount.aspx">Manage</a></li>
                                     <li id="liSignOut" runat="server"><a href="~/Logout.aspx" runat="server">Sign out</a></li>
                                 </ul>
                             </li>

@@ -79,51 +79,43 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="row">
-        <div class="col-md-12">
-            <asp:UpdatePanel ID="pnlTests" runat="server">
-                <ContentTemplate>
-                    <center>
-                        <table>
-                            <tr>
-                                <td style="text-align: right;">
-                                    <asp:Button ID="btnRefreshGrid" runat="server" ClientIDMode="Static" Width="20px" ToolTip="Refresh Trainees" Text="Refresh" Style="visibility: hidden;"/>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <asp:GridView ID="gvTrainees" runat="server" DataSourceID="linqTrainees" AutoGenerateColumns="False" DataKeyNames="TraineeID" CssClass="table table-bordered">
-                                        <Columns>
-                                            <asp:ButtonField ButtonType="Link" CommandName="EditTrainee" Text="Edit">
-                                                <HeaderStyle Width="75px" />
-                                                <ItemStyle Width="75px" HorizontalAlign="Center" />
-                                            </asp:ButtonField>
-                                            <asp:ButtonField ButtonType="Link" CommandName="TraineeTests" Text="Tests">
-                                                <HeaderStyle Width="75px" />
-                                                <ItemStyle Width="75px" HorizontalAlign="Center" />
-                                            </asp:ButtonField>
-                                            <asp:ButtonField ButtonType="Link" CommandName="RemoveTrainee" Text="Delete">
-                                                <HeaderStyle Width="75px" />
-                                                <ItemStyle Width="75px" HorizontalAlign="Center" />
-                                            </asp:ButtonField>
-                                            <asp:BoundField DataField="TraineeName" HeaderText="Trainee Name">
-                                                <ItemStyle HorizontalAlign="Left" />
-                                            </asp:BoundField>
-                                            <asp:BoundField DataField="EmailAddress" HeaderText="Email">
-                                                <ItemStyle HorizontalAlign="Left" />
-                                            </asp:BoundField>
-                                        </Columns>
-                                    </asp:GridView>
-                                    <asp:LinqDataSource ID="linqTrainees" runat="server" />
-                                </td>
-                            </tr>
-                        </table>
-                    </center>
-                </ContentTemplate>
-            </asp:UpdatePanel>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+                    <h1>Trainees</h1>
+                </div>
+                <asp:UpdatePanel ID="pnlTests" runat="server">
+                    <ContentTemplate>
+                        <asp:Button ID="btnRefreshGrid" runat="server" ClientIDMode="Static" Width="20px" ToolTip="Refresh Trainees" Text="Refresh" Style="visibility: hidden;" />
+                        <asp:GridView ID="gvTrainees" runat="server" DataSourceID="linqTrainees" AutoGenerateColumns="False" DataKeyNames="TraineeID" CssClass="table table-bordered">
+                            <Columns>
+                                <asp:ButtonField ButtonType="Link" CommandName="EditTrainee" Text="Edit">
+                                    <HeaderStyle Width="75px" />
+                                    <ItemStyle Width="75px" HorizontalAlign="Center" />
+                                </asp:ButtonField>
+                                <asp:ButtonField ButtonType="Link" CommandName="TraineeTests" Text="Tests">
+                                    <HeaderStyle Width="75px" />
+                                    <ItemStyle Width="75px" HorizontalAlign="Center" />
+                                </asp:ButtonField>
+                                <asp:ButtonField ButtonType="Link" CommandName="RemoveTrainee" Text="Delete">
+                                    <HeaderStyle Width="75px" />
+                                    <ItemStyle Width="75px" HorizontalAlign="Center" />
+                                </asp:ButtonField>
+                                <asp:BoundField DataField="TraineeName" HeaderText="Trainee Name">
+                                    <ItemStyle HorizontalAlign="Left" />
+                                </asp:BoundField>
+                                <asp:BoundField DataField="EmailAddress" HeaderText="Email">
+                                    <ItemStyle HorizontalAlign="Left" />
+                                </asp:BoundField>
+                            </Columns>
+                        </asp:GridView>
+                        <asp:LinqDataSource ID="linqTrainees" runat="server" />
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
         </div>
     </div>
-
 
 
     <div id="divTraineeAddEdit" class="form-group">

@@ -21,6 +21,7 @@ Public Class MembersMaster
 
             liSignIn.Visible = zVarLoginSession.TraineeID = 0
             liSignOut.Visible = zVarLoginSession.TraineeID > 0
+            linkCreateAccount.Visible = zVarLoginSession.TraineeID = 0
         End If
     End Sub
 
@@ -35,6 +36,7 @@ Public Class MembersMaster
 
         liSignIn.Visible = zVarLoginSession.TraineeID = 0
         liSignOut.Visible = zVarLoginSession.TraineeID > 0
+        linkCreateAccount.Visible = zVarLoginSession.TraineeID = 0
     End Sub
 
 End Class

@@ -23,15 +23,6 @@ Partial Public Class WESLoginControl
     Protected WithEvents pnlLogin As Global.System.Web.UI.WebControls.Panel
     
     '''<summary>
-    '''linkCreateAccount control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents linkCreateAccount As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
     '''txtUsername control.
     '''</summary>
     '''<remarks>

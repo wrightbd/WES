@@ -1,12 +1,14 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Admin/AdminMaster.Master" CodeBehind="WESOrders.aspx.vb" Inherits="WES.WESOrders" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server" />
+
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="row">
-        <div class="col-md-12">
-            <asp:UpdatePanel ID="pnlTests" runat="server">
-                <ContentTemplate>
-                    <center>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <asp:UpdatePanel ID="pnlTests" runat="server">
+                    <ContentTemplate>
+                        <center>
                         <table>
                             <tr>
                                 <td style="text-align: right;">
@@ -15,7 +17,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <asp:GridView ID="gvOrders" runat="server" DataSourceID="linqOrders" AutoGenerateColumns="False" DataKeyNames="WESOrderID">
+                                    <asp:GridView ID="gvOrders" runat="server" DataSourceID="linqOrders" AutoGenerateColumns="False" DataKeyNames="WESOrderID" CssClass="table table-bordered">
                                         <Columns>
                                             <asp:BoundField DataField="WESOrderID" HeaderText="Order Num">
                                                 <ItemStyle HorizontalAlign="Left" />
@@ -39,8 +41,9 @@
                             </tr>
                         </table>
                     </center>
-                </ContentTemplate>
-            </asp:UpdatePanel>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
         </div>
     </div>
 </asp:Content>

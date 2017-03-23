@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Admin/AdminMaster.Master" CodeBehind="WESTestQuestions.aspx.vb" Inherits="WES.WESTestQuestions" %>
-<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
@@ -61,31 +62,30 @@
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    
-    <div class="row">
-        <div class="col-md-12">
-            <asp:UpdatePanel ID="pnlQuestions" runat="server">
-                <ContentTemplate>
-                    <center>
-                        <table>
-                            <tr>
-                                <td style="text-align: center;">
-                                    Test: <asp:DropDownList ID="ddlTest" runat="server" DataSourceID="linqTest" DataTextField="TestName" DataValueField="TestID"></asp:DropDownList>
-                                    <asp:LinqDataSource ID="linqTest" runat="server"></asp:LinqDataSource>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                            </tr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+                    <h1>Test Questions</h1>
+                </div>
+                <asp:UpdatePanel ID="pnlQuestions" runat="server">
+                    <ContentTemplate>
+                        <div style="text-align: center;">
+                            Test:
+                            <asp:DropDownList ID="ddlTest" runat="server" DataSourceID="linqTest" DataTextField="TestName" DataValueField="TestID"></asp:DropDownList>
+                            <asp:LinqDataSource ID="linqTest" runat="server"></asp:LinqDataSource>
+                        </div>
+
+                        <table class="table">
                             <tr>
                                 <td style="text-align: right;">
-                                    <asp:Button ID="btnRefreshGrid" runat="server" ClientIDMode="Static" Width="20px" ToolTip="Refresh Tests" Text="Refresh" Style="visibility: hidden;"/>
+                                    <asp:Button ID="btnRefreshGrid" runat="server" ClientIDMode="Static" Width="20px" ToolTip="Refresh Tests" Text="Refresh" Style="visibility: hidden;" />
                                     <asp:Button ID="btnAddQuestion" runat="server" Text="Add Question" />
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <asp:GridView ID="gvQuestions" runat="server" DataSourceID="linqQuestions" AutoGenerateColumns="False" DataKeyNames="TestQuestionID">
+                                    <asp:GridView ID="gvQuestions" runat="server" DataSourceID="linqQuestions" AutoGenerateColumns="False" DataKeyNames="TestQuestionID" CssClass="table table-bordered">
                                         <Columns>
                                             <asp:ButtonField ButtonType="Link" CommandName="EditQuestion" Text="Edit">
                                                 <HeaderStyle Width="75px" />
@@ -104,18 +104,17 @@
                                 </td>
                             </tr>
                         </table>
-                    </center>
-                </ContentTemplate>
-            </asp:UpdatePanel>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
         </div>
     </div>
-
 
 
     <div id="divAddEdit" class="form-group">
         <asp:UpdatePanel ID="pnlAddEdit" runat="server">
             <ContentTemplate>
-                <table border="0" style="padding:0;" class="table-condensed">
+                <table class="table table-condensed">
                     <tr>
                         <td style="vertical-align: top; text-align: right;">Question:&nbsp;</td>
                         <td style="vertical-align: top; text-align: left;">
@@ -129,10 +128,10 @@
                         <td style="vertical-align: top; text-align: left;">
                             <asp:TextBox ID="txtExplanation" runat="server" Width="450px" TextMode="MultiLine" Rows="3" CssClass="form-control"></asp:TextBox>
                         </td>
-                    </tr>                    
+                    </tr>
                     <tr>
-                        <td colspan="2" style="text-align:right;">
-                            <asp:Button ID="btnRefreshAnswer" runat="server" ClientIDMode="Static" Width="20px" ToolTip="Refresh Tests" Text="Refresh" Style="visibility: hidden;"/>
+                        <td colspan="2" style="text-align: right;">
+                            <asp:Button ID="btnRefreshAnswer" runat="server" ClientIDMode="Static" Width="20px" ToolTip="Refresh Tests" Text="Refresh" Style="visibility: hidden;" />
                             <asp:Button ID="btnAddAnswer" runat="server" Text="Add Answer" />
                         </td>
                     </tr>
@@ -206,5 +205,5 @@
         </asp:UpdatePanel>
     </div>
 
-    
+
 </asp:Content>

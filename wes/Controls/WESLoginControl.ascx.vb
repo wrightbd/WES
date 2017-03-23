@@ -86,7 +86,7 @@ Public Class WESLoginControl
             chkRememberMe.Checked = False
         End If
 
-        linkCreateAccount.Visible = ShowCreateAccount
+        'linkCreateAccount.Visible = ShowCreateAccount
     End Sub
 
     Protected Sub btnResendEmail_Click(sender As Object, e As EventArgs) Handles btnResendEmail.Click

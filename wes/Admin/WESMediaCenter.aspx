@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Admin/AdminMaster.Master" CodeBehind="WESMediaCenter.aspx.vb" Inherits="WES.WESMediaCenter" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
         function OpenDialog() {
@@ -53,11 +54,12 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="row">
-        <div class="col-sm-12">
-            <asp:UpdatePanel ID="pnlMedia" runat="server">
-                <ContentTemplate>
-                    <center>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <asp:UpdatePanel ID="pnlMedia" runat="server">
+                    <ContentTemplate>
+                        <center>
                         <table>
                             <tr>
                                 <td style="text-align: right;">
@@ -87,8 +89,9 @@
                             </tr>
                         </table>
                     </center>
-                </ContentTemplate>
-            </asp:UpdatePanel>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
         </div>
     </div>
 

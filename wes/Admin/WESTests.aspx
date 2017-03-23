@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Tests" Language="vb" AutoEventWireup="false" MasterPageFile="~/Admin/AdminMaster.Master" CodeBehind="WESTests.aspx.vb" Inherits="WES.WESTests" %>
-<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
@@ -56,22 +57,24 @@
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    
-    <div class="row">
-        <div class="col-md-12">
-            <asp:UpdatePanel ID="pnlTests" runat="server">
-                <ContentTemplate>
-                    <center>
-                        <table>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+                    <h1>Tests</h1>
+                </div>
+                <asp:UpdatePanel ID="pnlTests" runat="server">
+                    <ContentTemplate>
+                        <table class="table">
                             <tr>
                                 <td style="text-align: right;">
                                     <asp:Button ID="btnRefreshGrid" runat="server" ClientIDMode="Static" Width="20px" ToolTip="Refresh Tests" Text="Refresh" Style="visibility: hidden;"/>
-                                    <asp:Button ID="btnAddTest" runat="server" Text="Add Test" />
+                                    <asp:Button ID="btnAddTest" runat="server" Text="Add Test" CssClass="btn btn-default" />
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <asp:GridView ID="gvTests" runat="server" DataSourceID="linqTests" AutoGenerateColumns="False" DataKeyNames="TestID" Width="500px">
+                                    <asp:GridView ID="gvTests" runat="server" DataSourceID="linqTests" AutoGenerateColumns="False" DataKeyNames="TestID" CssClass="table table-bordered">
                                         <Columns>
                                             <asp:ButtonField ButtonType="Link" CommandName="EditTest" Text="Edit">
                                                 <HeaderStyle Width="75px" />
@@ -91,18 +94,17 @@
                                 </td>
                             </tr>
                         </table>
-                    </center>
-                </ContentTemplate>
-            </asp:UpdatePanel>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
         </div>
     </div>
-
 
 
     <div id="divTestAddEdit" class="form-group">
         <asp:UpdatePanel ID="pnlAddEdit" runat="server">
             <ContentTemplate>
-                <table border="0" style="padding:0;" class="table-condensed">
+                <table border="0" style="padding: 0;" class="table table-condensed">
                     <tr>
                         <td style="vertical-align: top; text-align: right;">Test Name:&nbsp;</td>
                         <td style="vertical-align: top; text-align: left;">
@@ -120,14 +122,14 @@
                         <td style="vertical-align: top; text-align: right;">Cost:&nbsp;$</td>
                         <td style="vertical-align: top; text-align: left;">
                             <asp:TextBox ID="txtMemberCost" runat="server" Width="200px" CssClass="form-control"></asp:TextBox>
-                            <asp:FilteredTextBoxExtender ID="Filter_txtMemberCost" runat="server" TargetControlID="txtMemberCost"  FilterType="Numbers, Custom" ValidChars="." />
+                            <asp:FilteredTextBoxExtender ID="Filter_txtMemberCost" runat="server" TargetControlID="txtMemberCost" FilterType="Numbers, Custom" ValidChars="." />
                         </td>
                     </tr>
                     <tr>
                         <td style="vertical-align: top; text-align: right;">Passing Grade:&nbsp;</td>
                         <td style="vertical-align: top; text-align: left;">
                             <asp:TextBox ID="txtPassingGrade" runat="server" Width="200px" CssClass="form-control"></asp:TextBox>
-                            <asp:FilteredTextBoxExtender ID="txtPassingGrade_FilteredTextBoxExtender" runat="server" TargetControlID="txtPassingGrade"  FilterType="Numbers" />
+                            <asp:FilteredTextBoxExtender ID="txtPassingGrade_FilteredTextBoxExtender" runat="server" TargetControlID="txtPassingGrade" FilterType="Numbers" />
                         </td>
                     </tr>
                     <tr>

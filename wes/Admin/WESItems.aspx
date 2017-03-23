@@ -83,11 +83,12 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="row">
-        <div class="col-md-12">
-            <asp:UpdatePanel ID="pnlCountry" runat="server">
-                <ContentTemplate>
-                    <center>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <asp:UpdatePanel ID="pnlCountry" runat="server">
+                    <ContentTemplate>
+                        <center>
                         <table>
                             <tr>
                                 <td style="text-align: center;">
@@ -111,7 +112,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <asp:GridView ID="gvItem" runat="server" DataSourceID="linqItem" AutoGenerateColumns="False" DataKeyNames="ItemID" Width="500px">
+                                    <asp:GridView ID="gvItem" runat="server" DataSourceID="linqItem" AutoGenerateColumns="False" DataKeyNames="ItemID" Width="500px" CssClass="table table-bordered">
                                         <Columns>
                                             <asp:ButtonField ButtonType="Link" CommandName="EditItem" Text="Edit">
                                                 <HeaderStyle Width="75px" />
@@ -140,11 +141,11 @@
                             </tr>
                         </table>
                     </center>
-                </ContentTemplate>
-            </asp:UpdatePanel>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
         </div>
     </div>
-
 
 
     <div id="divCountryAddEdit" class="form-group">
@@ -155,7 +156,7 @@
                         Country Name:
                     </div>
                     <div class="col-md-8">
-                        <asp:TextBox ID="txtCountryName" runat="server" ClientIDMode="Static" CssClass="form-control" Width="350px"/>
+                        <asp:TextBox ID="txtCountryName" runat="server" ClientIDMode="Static" CssClass="form-control" Width="350px" />
                         <asp:HiddenField ID="hiddenCountryID" runat="server" />
                     </div>
                 </div>

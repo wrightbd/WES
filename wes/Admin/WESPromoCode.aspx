@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Promo Codes" Language="vb" AutoEventWireup="false" MasterPageFile="~/Admin/AdminMaster.Master" CodeBehind="WESPromoCode.aspx.vb" Inherits="WES.WESPromoCode" %>
-<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
@@ -56,11 +56,12 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="row">
-        <div class="col-md-12">
-            <asp:UpdatePanel ID="pnlPromoCodes" runat="server">
-                <ContentTemplate>
-                    <center>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <asp:UpdatePanel ID="pnlPromoCodes" runat="server">
+                    <ContentTemplate>
+                        <center>
                         <table>
                             <tr>
                                 <td style="text-align: right;">
@@ -70,7 +71,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <asp:GridView ID="gvPromoCodes" runat="server" DataSourceID="linqPromoCodes" AutoGenerateColumns="False" DataKeyNames="PromoCodeID" Width="500px">
+                                    <asp:GridView ID="gvPromoCodes" runat="server" DataSourceID="linqPromoCodes" AutoGenerateColumns="False" DataKeyNames="PromoCodeID" Width="500px"
+                                        CssClass="table table-bordered">
                                         <Columns>
                                             <asp:ButtonField ButtonType="Link" CommandName="EditPromoCode" Text="Edit">
                                                 <HeaderStyle Width="75px" />
@@ -91,18 +93,18 @@
                             </tr>
                         </table>
                     </center>
-                </ContentTemplate>
-            </asp:UpdatePanel>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
         </div>
     </div>
-    <br /><br />
 
 
 
     <div id="divPromoCodeAddEdit" class="form-group">
         <asp:UpdatePanel ID="pnlAddEdit" runat="server">
             <ContentTemplate>
-                <table border="0" style="padding:0;" class="table-condensed">
+                <table border="0" style="padding: 0;" class="table-condensed">
                     <tr>
                         <td style="vertical-align: top; text-align: right;">Promo Code Name:&nbsp;</td>
                         <td style="vertical-align: top; text-align: left;">
@@ -120,7 +122,7 @@
                         <td style="vertical-align: top; text-align: right;">Discount:&nbsp;</td>
                         <td style="vertical-align: top; text-align: left;">
                             <asp:TextBox ID="txtDiscount" runat="server" Width="425px" CssClass="form-control"></asp:TextBox>
-                            <asp:FilteredTextBoxExtender ID="Filter_txtDiscount" runat="server" TargetControlID="txtDiscount"  FilterType="Numbers, Custom" ValidChars="." />
+                            <asp:FilteredTextBoxExtender ID="Filter_txtDiscount" runat="server" TargetControlID="txtDiscount" FilterType="Numbers, Custom" ValidChars="." />
                         </td>
                     </tr>
                     <tr>

@@ -151,25 +151,27 @@
     <Content Include="css\pushy.css" />
     <Content Include="css\wes.css" />
     <Content Include="Default.aspx" />
-    <Content Include="Default2.aspx" />
     <Content Include="FAQ.aspx" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="images\01.jpg" />
     <Content Include="images\banner2.jpg" />
     <Content Include="images\banner3.jpg" />
     <Content Include="images\bg_footer.jpg" />
+    <Content Include="images\billy-potter.jpg" />
     <Content Include="images\BillyPotter.jpeg" />
     <Content Include="images\Carousel1.jpg" />
     <Content Include="images\Carousel2.jpg" />
     <Content Include="images\Carousel3.jpg" />
     <Content Include="images\Carousel4.jpg" />
+    <Content Include="images\chat-kleinpeter.jpg" />
     <Content Include="images\ChatKleinpeter.JPG" />
+    <Content Include="images\ed-schwartzenburg.jpg" />
     <Content Include="images\EdSchwartzenburg.JPG" />
     <Content Include="images\info01.jpg" />
     <Content Include="images\info02.jpg" />
     <Content Include="images\info03.jpg" />
+    <Content Include="images\joe-martin.jpg" />
     <Content Include="images\JoeMartin.JPG" />
     <Content Include="images\personaltrainerback.jpg" />
     <Content Include="img\brand.png" />
@@ -180,8 +182,6 @@
     <Content Include="img\jumbo-img.jpg" />
     <Content Include="img\paypalheader.jpg" />
     <Content Include="img\WES-logo.png" />
-    <Content Include="js\jquery.bxslider.js" />
-    <Content Include="js\main.js" />
     <Content Include="js\vendor\bootstrap.js" />
     <Content Include="js\vendor\bootstrap.min.js" />
     <Content Include="js\vendor\jquery-1.11.2.js" />
@@ -204,20 +204,13 @@
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap.css.map" />
     <Content Include="Franchise-Bold-hinted.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="js\vendor\jquery-1.11.3.intellisense.js" />
     <Content Include="js\vendor\jquery-1.11.3.js" />
     <Content Include="js\vendor\jquery-1.11.3.min.js" />
     <Content Include="js\vendor\jquery-ui.js" />
     <Content Include="js\vendor\jquery-ui.min.js" />
     <Content Include="robots.txt" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-2.2.1.js" />
-    <Content Include="Scripts\jquery-2.2.1.min.js" />
+    <Content Include="js\wes.js" />
     <Content Include="sitemap.xml" />
     <Content Include="Testimonials.aspx" />
     <Content Include="tile-wide.png" />
@@ -340,13 +333,6 @@
     </Compile>
     <Compile Include="Default.aspx.vb">
       <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Default2.aspx.designer.vb">
-      <DependentUpon>Default2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default2.aspx.vb">
-      <DependentUpon>Default2.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="FAQ.aspx.designer.vb">
@@ -526,7 +512,6 @@
     <Content Include="SiteMaster.Master" />
     <Content Include="js\vendor\jquery-1.11.3.min.map" />
     <Content Include="packages.config" />
-    <Content Include="Scripts\jquery-2.2.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -534,7 +519,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="fonts\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
