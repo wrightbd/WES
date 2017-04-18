@@ -58,7 +58,7 @@ Public Class WESLoginControl
                 End If
 
                 If zVarCurrentLogin.TraineeID > 0 AndAlso zVarCurrentLogin.EmailStatus > 0 Then
-                    Response.Redirect("~/Default.aspx")
+                    Response.Redirect("~/Members/MemberDashboard.aspx")
                 End If
             Else
                 pnlLogin.Visible = True

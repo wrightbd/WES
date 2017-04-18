@@ -11,17 +11,7 @@ Public Class ManageMaster
         End If
 
         If Not IsPostBack Then
-            liManage.Visible = zVarLoginSession.TraineeID > 0 'AndAlso zVarLoginSession.EmailStatus <> 0
-
-            liMember.Visible = zVarLoginSession.TraineeID > 0 'AndAlso zVarLoginSession.EmailStatus <> 0
-
-            liAdmin.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.AdminStatus <> 0 'AndAlso zVarLoginSession.EmailStatus <> 0 
-
-            itemTest.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.TestAvailable = 1
-
-            liSignIn.Visible = zVarLoginSession.TraineeID = 0
-            liSignOut.Visible = zVarLoginSession.TraineeID > 0
-            linkCreateAccount.Visible = zVarLoginSession.TraineeID = 0
+            RefreshMenu()
         End If
     End Sub
 

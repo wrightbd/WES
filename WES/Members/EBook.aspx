@@ -25,7 +25,7 @@
                 It does not matter how in shape a client is, whether they are a current athlete, former athlete, or have never been an athlete 
                 our World Exercise System’s motto applies to everyone. "Each work-out gets you ready for your next work-out."
                 </blockquote>
-                <a class="btn btn-primary btn-lg" href="Docs/WESEBook.pdf">Download E-Book</a>
+                <a class="btn btn-primary btn-lg" href="Docs/WESEBook.pdf"><i class="fa fa-book"></i> Download E-Book</a>
             </div>
         </div>
     </div>

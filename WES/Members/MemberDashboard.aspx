@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 page-title">
-                    <h1>Media Center</h1>
+                    <h1>Member Dashboard</h1>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4">
-                    <a href="~/Members/StudyGuide.aspx" class="well dashboard-tile dashboard-tile-top" runat="server">
+                    <a href="~/Members/Videos.aspx" class="well dashboard-tile dashboard-tile-top" runat="server">
                         <i class="fa fa-upload fa-5x"></i>
                         <h3>Upload Your Video for Review</h3>
                         <p>You must upload a video for review. Once uploaded, we will process.</p>
@@ -92,7 +92,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4">
-                    <a href="~/Members/Videos.aspx" class="well dashboard-tile dashboard-tile-mid" runat="server">
+                    <a href="~/Members/StudyGuide.aspx" class="well dashboard-tile dashboard-tile-mid" runat="server">
                         <i class="fa fa-pencil-square fa-5x"></i>
                         <h3>Download Study Guide</h3>
                         <p>Download an informative study guide with tips and info on our test.</p>
