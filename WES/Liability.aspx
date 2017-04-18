@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" MasterPageFile="~/SiteMaster.Master" CodeBehind="Liability.aspx.vb" Inherits="WES.UpgradeMembership" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" MasterPageFile="~/SiteMaster.Master" CodeBehind="Liability.aspx.vb" Inherits="WES.Members.UpgradeMembership" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server" />
 

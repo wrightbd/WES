@@ -86,9 +86,11 @@ h1, .h1 {
         width: 100%;
         height: 100%;
     }
-    .banner-interior {
-        margin-bottom: 60px;
-    }
+
+.banner-interior {
+    margin-bottom: 60px;
+}
+
 .info {
     position: absolute;
     bottom: 40px;
@@ -103,28 +105,41 @@ h1, .h1 {
     width: 100%;
     bottom: 40px;
 }
-.page-title h1 {
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, .85);
+
+    .page-title h1 {
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, .85);
+    }
+
+.info h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
 }
 
-    .info h2 {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-size: 48px;
-        font-weight: 700;
+.info p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.img-left {
+    float: left;
+    max-width: 308px;
+    width: 100%;
+    margin: 0 20px 15px 0;
+}
+
+.panel-faq {
+    border: 0;
+}
+
+    .panel-faq > .panel-heading {
+        border: 0;
+        color: #fff;
+        background: #081f3f;
     }
 
-    .info p {
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-    }
-    .img-left {
-        float: left;
-        max-width: 308px;
-        width: 100%;
-        margin: 0 20px 15px 0;
-    }
 #call-to-action {
     background: url("../images/banner2.jpg") repeat;
     max-height: 241px;
@@ -160,20 +175,22 @@ h1, .h1 {
         color: #ff0000;
     }
 
-    .paypal-btn {
-        border: 0;
-        width: 250px;
-        height: 80px;
-        position: absolute;
-        left: 50%;
-        margin-left: -125px;
-        bottom: 20px;
-    }
-    .choose-plan {
-        text-align: center;
-        position: relative;
-        min-height: 310px;
-    }
+.paypal-btn {
+    border: 0;
+    width: 250px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
+    bottom: 20px;
+}
+
+.choose-plan {
+    text-align: center;
+    position: relative;
+    min-height: 330px;
+}
+
 .callout-info {
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -233,6 +250,14 @@ h1, .h1 {
         font-size: 22px;
     }
 
+.quick-links i {
+    color: #fff;
+}
+
+.quick-links li {
+    padding-bottom: 10px;
+}
+
 #footer {
     background: url("../images/bg_footer.jpg") repeat-x;
     margin-top: 60px;
@@ -251,25 +276,33 @@ h1, .h1 {
     font-size: 18px;
 }
 
-    .footer-top .contact-us p span {
-        font-size: 30px;
-    }
+.footer-top .contact-us p span {
+    font-size: 30px;
+}
 
-.footer-top .contact-us a {
+.footer-top a {
     color: #2caaca;
 }
 
-.footer-top .about-us p {}
+.footer-top .about-us p {
+}
 
 .footer-bottom {
     background-color: #8d0006;
     color: #fff;
 }
+
 .copyright {
     text-align: right;
     font-family: "Oswald", sans-serif;
     font-weight: 500;
     padding: 20px 0;
+}
+.copyright a {
+    color: #fff;
+}
+.copyright a:hover {
+    text-decoration: underline;
 }
 .form-horizontal h2 {
     padding-bottom: 10px;
@@ -277,6 +310,7 @@ h1, .h1 {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
 }
+
 @media (min-width: 768px) {
     .navbar-nav {
         margin: 16px 0 0 20px;
