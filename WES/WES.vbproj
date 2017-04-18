@@ -117,6 +117,7 @@
     <Content Include="Admin\WESTrainees.aspx" />
     <Content Include="Admin\WESTraineeVideos.aspx" />
     <Content Include="apple-touch-icon.png" />
+    <Content Include="GalleryAndMedia.aspx" />
     <Content Include="GetCertified.aspx" />
     <Content Include="ChoosePlan.aspx" />
     <Content Include="ContactUs.aspx" />
@@ -179,6 +180,7 @@
     <Content Include="images\joe-martin.jpg" />
     <Content Include="images\JoeMartin.JPG" />
     <Content Include="images\paypal-1pay.png" />
+    <Content Include="images\paypal-1year.png" />
     <Content Include="images\paypal-2pay.png" />
     <Content Include="images\paypal-4pay.png" />
     <Content Include="images\personaltrainerback.jpg" />
@@ -203,6 +205,7 @@
     <Content Include="Members\EBook.aspx" />
     <Content Include="Members\MediaCenter.aspx" />
     <Content Include="Members\StudyGuide.aspx" />
+    <Content Include="Members\UpgradeMembership.aspx" />
     <Content Include="Members\Videos.aspx" />
     <Content Include="Members\WESPTC.aspx" />
     <Content Include="paypal-btn-01.html" />
@@ -212,9 +215,7 @@
     <Content Include="Admin\AdminMaster.Master" />
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap.css.map" />
-    <Content Include="Franchise-Bold-hinted.woff" />
     <Content Include="Liability.aspx" />
-    <Content Include="UpgradeMembership.aspx" />
     <None Include="js\vendor\jquery-1.11.3.intellisense.js" />
     <Content Include="js\vendor\jquery-1.11.3.js" />
     <Content Include="js\vendor\jquery-1.11.3.min.js" />
@@ -294,6 +295,13 @@
       <DependentUpon>WESTrainees.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="GalleryAndMedia.aspx.designer.vb">
+      <DependentUpon>GalleryAndMedia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GalleryAndMedia.aspx.vb">
+      <DependentUpon>GalleryAndMedia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Liability.aspx.designer.vb">
       <DependentUpon>Liability.aspx</DependentUpon>
     </Compile>
@@ -301,12 +309,12 @@
       <DependentUpon>Liability.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="UpgradeMembership.aspx.designer.vb">
+    <Compile Include="Members\UpgradeMembership.aspx.designer.vb">
       <DependentUpon>UpgradeMembership.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UpgradeMembership.aspx.vb">
+    <Compile Include="Members\UpgradeMembership.aspx.vb">
       <DependentUpon>UpgradeMembership.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Content Include="App_Code\WESPDFHandler.vb" />
     <Compile Include="Admin\WESTraineeVideos.aspx.designer.vb">
