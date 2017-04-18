@@ -204,6 +204,7 @@
     <Content Include="Manage\ManageAccount.aspx" />
     <Content Include="Members\EBook.aspx" />
     <Content Include="Members\MediaCenter.aspx" />
+    <Content Include="Members\MemberDashboard.aspx" />
     <Content Include="Members\StudyGuide.aspx" />
     <Content Include="Members\UpgradeMembership.aspx" />
     <Content Include="Members\Videos.aspx" />
@@ -307,6 +308,13 @@
     </Compile>
     <Compile Include="Liability.aspx.vb">
       <DependentUpon>Liability.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Members\MemberDashboard.aspx.designer.vb">
+      <DependentUpon>MemberDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Members\MemberDashboard.aspx.vb">
+      <DependentUpon>MemberDashboard.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Members\UpgradeMembership.aspx.designer.vb">

@@ -258,6 +258,66 @@ h1, .h1 {
     padding-bottom: 10px;
 }
 
+.dashboard-container {
+    background: #e5e5e5;
+    padding: 20px 0 30px;
+}
+
+.dashboard-container-mid {
+    background: #081f3f;
+    padding-bottom: 50px;
+}
+
+.dashboard-container-mid h2 {
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0.8);
+}
+
+.dashboard-container h2, .dashboard-container h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+.dashboard-container h2 {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.dashboard-container h3 {
+    margin-bottom: 10px;
+}
+
+.dashboard-tile {
+    display: block;
+    text-align: center;
+    border-radius: 14px;
+}
+
+    .dashboard-tile:hover {
+        text-decoration: none;
+    }
+
+.dashboard-tile-top {
+    background: rgb(209,7,40);
+    background: -moz-linear-gradient(top, rgba(209,7,40,1) 0%, rgba(107,2,17,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(209,7,40,1) 0%,rgba(107,2,17,1) 100%);
+    background: linear-gradient(to bottom, rgba(209,7,40,1) 0%,rgba(107,2,17,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d10728', endColorstr='#6b0211',GradientType=0 );
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
+}
+
+.dashboard-tile-mid {
+    background: #fff;
+    color: #333;
+    text-shadow: none;
+}
+
+.dashboard-tile-top:hover {
+    background: #fff;
+    text-shadow: none;
+}
+
 #footer {
     background: url("../images/bg_footer.jpg") repeat-x;
     margin-top: 60px;
@@ -298,12 +358,15 @@ h1, .h1 {
     font-weight: 500;
     padding: 20px 0;
 }
-.copyright a {
-    color: #fff;
-}
-.copyright a:hover {
-    text-decoration: underline;
-}
+
+    .copyright a {
+        color: #fff;
+    }
+
+        .copyright a:hover {
+            text-decoration: underline;
+        }
+
 .form-horizontal h2 {
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
