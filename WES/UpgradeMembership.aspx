@@ -24,7 +24,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-md-offset-4">
                 <div class="well choose-plan">
                     <h3><span class="text-success">1</span> Full Time Payment</h3>
                     <h3><span class="text-danger">$99</span></h3>

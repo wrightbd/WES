@@ -35,7 +35,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <ul class="contact">
-                                <li><i class="fa fa-phone"></i> 1 225 525 2655</li>
+                                <li><i class="fa fa-phone"></i> <a href="tel:2255252655">(225) 525-2655</a></li>
                                  <li><i class="fa fa-envelope"></i> <a href="mailto:info@worldexercisesystem.com">info@worldexercisesystem.com</a></li>
                             </ul>
                         </div>
@@ -133,7 +133,16 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div class="quick-links">
+                                <h3>Quick Links</h3>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-star"></i> <a href="~/ChoosePlan.aspx" runat="server">Get Your CPT Certification</a></li>
+                                    <li><i class="fa fa-star"></i> <a href="~/ContactUs.aspx" runat="server">Want More Info?</a></li>
+                                    <li><i class="fa fa-star"></i> <a href="~/Login.aspx" runat="server">Sign In or Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="col-md-4">
                             <div class="about-us">
                                 <h3>About Us</h3>
@@ -150,7 +159,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="copyright">
-                                Copyright 2017 &copy; World Exercise System
+                                Copyright 2017 &copy; World Exercise System | <a href="#" runat="server">Sitemap</a> | Site by <a href="http://www.thewebsquire.com" runat="server">The Web Squire</a>
                             </div>
                         </div>
                     </div>

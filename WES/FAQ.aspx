@@ -20,7 +20,7 @@
             <div class="col-xs-12">
                 
                 <div class="panel-group">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default panel-faq">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse1">1. How quickly can I go through the study material, videos, and certification test?</a>
@@ -30,7 +30,7 @@
                             <div class="panel-body">A quick learner can go through it all in 30-40 hours.</div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
+                    <div class="panel panel-default panel-faq">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse2">2. How much will I learn about fitness after taking this course?</a>
@@ -40,7 +40,7 @@
                             <div class="panel-body">You will learn more about the fitness industry with World Exercise System than with any other company. </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
+                    <div class="panel panel-default panel-faq">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse3">3. How hard is the certification test?</a>
@@ -50,7 +50,7 @@
                             <div class="panel-body">The test is an accumulation of material from the e-book, study guide, and fitness videos. If you put in the work to understand what is taught then your grade will reflect that.</div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
+                    <div class="panel panel-default panel-faq">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse4">4. Why does World Exercise System require a work-out video submission from every student before a certification is granted?</a>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
 
-                    <div class="panel panel-default">
+                    <div class="panel panel-default panel-faq">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse5">5. How does World Exercise System compare to other certifications?</a>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
 
-                    <div class="panel panel-default">
+                    <div class="panel panel-default panel-faq">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse6">6. How soon can I begin training clients?</a>
@@ -87,7 +87,7 @@
                         </div>
                     </div>
 
-                    <div class="panel panel-default">
+                    <div class="panel panel-default panel-faq">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse7">7. Does World Exercise System do onsite workshops? How do I sign up for one?</a>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
 
-                    <div class="panel panel-default">
+                    <div class="panel panel-default panel-faq">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse8">8. What will I learn that I didn't learn on the on-line course during an onsite workshop?</a>
@@ -113,7 +113,7 @@
                         </div>
                     </div>
 
-                    <div class="panel panel-default">
+                    <div class="panel panel-default panel-faq">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse9">9. What are some benefits of being a long term member of World Exercise System?</a>
@@ -126,7 +126,7 @@
                         </div>
                     </div>
 
-                    <div class="panel panel-default">
+                    <div class="panel panel-default panel-faq">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse10">10. How long is the certification good for?</a>

@@ -16,14 +16,14 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <p class="lead">By clicking continue, you agree to the following agreement below. Your acceptance of this agreement is required in order to setup a user account
+                <p class="lead">
+                    By clicking continue, you agree to the following agreement below. Your acceptance of this agreement is required in order to setup a user account
                     within our system. Please read below and select "continue & register".
                 </p>
                 <div class="row">
                     <div class="col-xs-12">
                         <a class="btn btn-lg btn-danger" role="button" href="~/CreateAccount.aspx" runat="server">Continue & Register</a>
                     </div>
-
                 </div>
                 <p>
                     World Exercise System, LLC (“us”, “we”, or “our”) operates worldexercisesystem.com (the “WebSite”).  This Agreement is between World Exercise System, LLC and 
@@ -39,7 +39,7 @@
                     <li>“Service” is the functionality and features offered through WES’s Website to our Members.</li>
                     <li>“Content” is all text, information, graphics, audio, video, and data offered through WES’ Website. </li>
                     <li>“User” or “You” collectively refers to a Member or a Visitor as defined above.</li>
-                    <li>You promise not to sue, and to release and indemnify, World Exercise System, LLC and employees/operators from all claims identified herein.</li> 
+                    <li>You promise not to sue, and to release and indemnify, World Exercise System, LLC and employees/operators from all claims identified herein.</li>
                 </ul>
 
                 <p>
@@ -82,7 +82,10 @@
                 </p>
             </div>
         </div>
-
-
+        <div class="row">
+            <div class="col-xs-12">
+                <a class="btn btn-lg btn-danger" role="button" href="~/CreateAccount.aspx" runat="server">Continue & Register</a>
+            </div>
+        </div>
     </div>
 </asp:Content>

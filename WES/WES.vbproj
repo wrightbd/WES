@@ -205,14 +205,10 @@
     <Content Include="Members\StudyGuide.aspx" />
     <Content Include="Members\Videos.aspx" />
     <Content Include="Members\WESPTC.aspx" />
-    <Content Include="Mission.aspx" />
-    <Content Include="OurTrainers.aspx" />
-    <Content Include="MakeAPayment.aspx" />
     <Content Include="paypal-btn-01.html" />
     <Content Include="paypal-btn-02.html" />
     <Content Include="paypal-btn-04.html" />
     <Content Include="paypal-btn-03.html" />
-    <Content Include="PurchaseComplete.aspx" />
     <Content Include="Admin\AdminMaster.Master" />
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap.css.map" />
@@ -226,8 +222,6 @@
     <Content Include="js\vendor\jquery-ui.min.js" />
     <Content Include="robots.txt" />
     <Content Include="js\wes.js" />
-    <Content Include="sitemap.xml" />
-    <Content Include="Testimonials.aspx" />
     <Content Include="tile-wide.png" />
     <Content Include="tile.png" />
     <Content Include="VerifyEmail.aspx" />
@@ -374,7 +368,6 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="IISHandler1.vb" />
     <Compile Include="Login.aspx.designer.vb">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
@@ -445,13 +438,6 @@
       <DependentUpon>WESPTC.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Mission.aspx.designer.vb">
-      <DependentUpon>Mission.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Mission.aspx.vb">
-      <DependentUpon>Mission.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -471,40 +457,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="OurTrainers.aspx.designer.vb">
-      <DependentUpon>OurTrainers.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="OurTrainers.aspx.vb">
-      <DependentUpon>OurTrainers.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="MakeAPayment.aspx.designer.vb">
-      <DependentUpon>MakeAPayment.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MakeAPayment.aspx.vb">
-      <DependentUpon>MakeAPayment.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="PurchaseComplete.aspx.designer.vb">
-      <DependentUpon>PurchaseComplete.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="PurchaseComplete.aspx.vb">
-      <DependentUpon>PurchaseComplete.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="SiteMaster.Master.designer.vb">
       <DependentUpon>SiteMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="SiteMaster.Master.vb">
       <DependentUpon>SiteMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Testimonials.aspx.designer.vb">
-      <DependentUpon>Testimonials.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Testimonials.aspx.vb">
-      <DependentUpon>Testimonials.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="VerifyEmail.aspx.designer.vb">
       <DependentUpon>VerifyEmail.aspx</DependentUpon>
@@ -531,6 +489,7 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\PublishProfiles\CustomProfile.pubxml" />
     <None Include="My Project\PublishProfiles\local.pubxml" />
     <None Include="My Project\PublishProfiles\WES.pubxml" />
     <None Include="My Project\PublishProfiles\worldexercisesystem.com - Web Deploy.pubxml" />

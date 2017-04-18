@@ -20,15 +20,17 @@
             <div class="col-xs-12">
                 <p class="text-center">How would you like to become the top trainer in your area? Then don't waste another day!</p>
                 <p class="text-center">
-                At World Exercise System, we have perfected the Personal Training Certification model! Our certification encompasses all areas of fitness, training athletes to senior citizens and helps
+                    At World Exercise System, we have perfected the Personal Training Certification model! Our certification encompasses all areas of fitness, training athletes to senior citizens and helps
                 you with how to run your own personal training business.
-                    </p>
-                <p class="text-center">
-                 PERSONAL TRAINING IS AN EXCITING AND AMAZING BUSINESS! JUST IMAGINE GETTING PAID TO DO WHAT YOU ARE PASSIONATE ABOUT!
                 </p>
+                <h3 class="text-center">PERSONAL TRAINING IS AN EXCITING AND AMAZING BUSINESS!<br />
+                    JUST IMAGINE GETTING PAID TO DO WHAT YOU ARE PASSIONATE ABOUT!
+                </h3>
                 <div class="row">
                     <div class="col-xs-12">
-                        <a class="btn btn-lg" role="button" href="~/ChoosePlan.aspx" runat="server"><img src="images/get-certified-btn-large.jpg" alt="Start your CPT Certification Now" /> </a>
+                        <a class="text-center" role="button" href="~/ChoosePlan.aspx" runat="server">
+                            <img src="images/get-certified-btn-large.jpg" alt="Start your CPT Certification Now" class="img-responsive" />
+                        </a>
                     </div>
 
                 </div>
