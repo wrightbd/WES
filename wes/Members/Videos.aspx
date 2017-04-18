@@ -3,12 +3,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server" />
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div id="banner" class="banner-interior">
+        <img src="~/images/banner-interior.jpg" alt="" runat="server" />
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 page-title">
+                    <h1>Upload Videos</h1>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div class="page-header">
-                    <h1>Videos</h1>
-                </div>
                 <h4>Instructions on submitting video for certificate approval:</h4>
                 <ol>
                     <li>Upload your video to YouTube</li>

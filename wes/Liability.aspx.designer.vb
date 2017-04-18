@@ -11,5 +11,5 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class ChoosePlan
+Partial Public Class UpgradeMembership
 End Class

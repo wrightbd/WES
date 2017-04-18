@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Payment Options" Language="vb" AutoEventWireup="false" MasterPageFile="~/SiteMaster.Master" CodeBehind="PaymentPlans.aspx.vb" Inherits="WES.PaymentPlans" %>
+﻿<%@ Page Title="Payment Options" Language="vb" AutoEventWireup="false" MasterPageFile="~/SiteMaster.Master" CodeBehind="MakeAPayment.aspx.vb" Inherits="WES.PaymentPlans" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <meta name="description" content="Availble Payment Options for World Exercise System's Certified Personal Trainer Certificate Exam" />

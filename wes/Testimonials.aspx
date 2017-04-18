@@ -5,15 +5,22 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div id="banner" class="banner-interior">
+        <img src="~/images/banner-interior.jpg" alt="" runat="server" />
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 page-title">
+                    <h1>Testimonials</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
 
-                <div class="page-header">
-                    <h1>Professional Recognitions</h1>
-                </div>
-
-                <div class="panel panel-default">
+               <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-4 col-md-2">

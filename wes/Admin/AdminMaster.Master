@@ -36,7 +36,7 @@
                         <div class="col-sm-12">
                             <ul class="contact">
                                 <li><i class="fa fa-phone"></i> 1 225 525 2655</li>
-                                <li><i class="fa fa-envelope"></i> <a href="mailto:wesptcertification@gmail.com">wesptcertification@gmail.com</a></li>
+                                 <li><i class="fa fa-envelope"></i> <a href="mailto:info@worldexercisesystem.com">info@worldexercisesystem.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -61,17 +61,14 @@
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown">About Us<span class="caret"></span></a>
                                 <ul class="dropdown-menu subnav">
-                                    <li><a href="~/AboutUs.aspx" runat="server">About the Company</a></li>
-                                    <li><a href="~/OurTrainers.aspx" runat="server">Our Trainers</a></li>
-                                    <li><a href="~/Testimonials.aspx" runat="server">Testimonials</a></li>
+                                    <li><a href="~/AboutTheCompany.aspx" runat="server">About the Company</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown">Become a Trainer<span class="caret"></span></a>
                                 <ul class="dropdown-menu subnav">
                                     <li><a href="~/FAQ.aspx" runat="server">FAQ</a></li>
-                                    <li><a href="~/BecomeCPT.aspx" runat="server">Get Certified</a></li>
-                                    <li><a href="~/PaymentPlans.aspx" runat="server">Make a Payment</a></li>
+                                    <li><a href="~/GetCertified.aspx" runat="server">Get Certified</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown" id="liMember" runat="server">
@@ -79,13 +76,10 @@
                                 <ul class="dropdown-menu subnav">
                                     <li><a href="~/Members/EBook.aspx" runat="server">E-Book</a></li>
                                     <li><a href="~/Members/StudyGuide.aspx" runat="server">Study Guide</a></li>
-                                    <li><a href="~/Members/Videos.aspx" runat="server">Videos</a></li>
+                                    <li><a href="~/Members/Videos.aspx" runat="server">Upload Videos</a></li>
                                     <li><a href="~/Members/MediaCenter.aspx" runat="server">Media Center</a></li>
                                     <li id="itemTest" runat="server"><a href="~/Members/WESPTC.aspx" runat="server">Test</a></li>
                                 </ul>
-                            </li>
-                            <li>
-                                <a runat="server" href="~/ContactUs.aspx">Contact Us</a>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
@@ -105,7 +99,7 @@
                             <li id="liManage" runat="server" class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown">My Account<span class="caret"></span></a>
                                 <ul class="dropdown-menu subnav">
-                                    <li><a href="~/Manage/ManageAccount.aspx">Manage</a></li>
+                                    <li><a href="~/Manage/ManageAccount.aspx" runat="server">Manage</a></li>
                                     <li id="liSignOut" runat="server"><a href="~/Logout.aspx" runat="server">Sign out</a></li>
                                 </ul>
                             </li>
@@ -113,7 +107,7 @@
                                 <a href="~/Login.aspx" runat="server">Sign in</a>
                             </li>
                             <li>
-                                <asp:HyperLink ID="linkCreateAccount" runat="server" NavigateUrl="https://www.worldexercisesystem.com/CreateAccount.aspx">Register</asp:HyperLink>
+                                <asp:HyperLink ID="linkCreateAccount" runat="server" NavigateUrl="https://www.worldexercisesystem.com/ChoosePlan.aspx">Register</asp:HyperLink>
                             </li>
                         </ul>
                     </div>
@@ -135,7 +129,7 @@
                                     P.O. Box 77938<br />
                                     Baton Rouge, LA 70817<br />
                                     <span>225-525-2655</span><br />
-                                    <a href="mailto:wesptcertification@gmail.com">wesptcertification@gmail.com</a>
+                                    <a href="mailto:info@worldexercisesystem.com">info@worldexercisesystem.com</a>
                                 </p>
                             </div>
                         </div>
@@ -144,7 +138,7 @@
                             <div class="about-us">
                                 <h3>About Us</h3>
                                 <p>Our concept is simple yet effective. We have taken over 30 years to perfect what we do and we will teach you the same concepts which made us successful.</p>
-                                <a href="~/AboutUs.aspx" class="btn btn-alt" runat="server">Learn More</a>
+                                <a href="~/AboutTheCompany.aspx" class="btn btn-alt" runat="server">Learn More</a>
                             </div>
                         </div>
                     </div>

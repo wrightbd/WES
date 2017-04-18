@@ -86,13 +86,26 @@ h1, .h1 {
         width: 100%;
         height: 100%;
     }
-
+    .banner-interior {
+        margin-bottom: 60px;
+    }
 .info {
     position: absolute;
     bottom: 40px;
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+}
+
+.page-title {
+    position: absolute;
+    max-height: 180px;
+    width: 100%;
+    bottom: 40px;
+}
+.page-title h1 {
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .85);
 }
 
     .info h2 {
@@ -106,7 +119,12 @@ h1, .h1 {
         font-size: 18px;
         font-weight: 500;
     }
-
+    .img-left {
+        float: left;
+        max-width: 308px;
+        width: 100%;
+        margin: 0 20px 15px 0;
+    }
 #call-to-action {
     background: url("../images/banner2.jpg") repeat;
     max-height: 241px;
@@ -142,6 +160,20 @@ h1, .h1 {
         color: #ff0000;
     }
 
+    .paypal-btn {
+        border: 0;
+        width: 250px;
+        height: 80px;
+        position: absolute;
+        left: 50%;
+        margin-left: -125px;
+        bottom: 20px;
+    }
+    .choose-plan {
+        text-align: center;
+        position: relative;
+        min-height: 310px;
+    }
 .callout-info {
     text-align: center;
     font-family: 'Roboto', sans-serif;

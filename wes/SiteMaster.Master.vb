@@ -7,11 +7,11 @@ Public Class SiteMaster
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
-            liManage.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.EmailStatus <> 0
+            liManage.Visible = zVarLoginSession.TraineeID > 0 'AndAlso zVarLoginSession.EmailStatus <> 0
 
-            liMember.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.EmailStatus <> 0
+            liMember.Visible = zVarLoginSession.TraineeID > 0 'AndAlso zVarLoginSession.EmailStatus <> 0
 
-            liAdmin.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.EmailStatus <> 0 AndAlso zVarLoginSession.AdminStatus <> 0
+            liAdmin.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.AdminStatus <> 0 'AndAlso zVarLoginSession.EmailStatus <> 0 
 
             itemTest.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.TestAvailable = 1
 
@@ -23,11 +23,11 @@ Public Class SiteMaster
     End Sub
 
     Public Sub RefreshMenu()
-        liManage.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.EmailStatus <> 0
+        liManage.Visible = zVarLoginSession.TraineeID > 0 'AndAlso zVarLoginSession.EmailStatus <> 0
 
-        liMember.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.EmailStatus <> 0
+        liMember.Visible = zVarLoginSession.TraineeID > 0 'AndAlso zVarLoginSession.EmailStatus <> 0
 
-        liAdmin.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.EmailStatus <> 0 AndAlso zVarLoginSession.AdminStatus <> 0
+        liAdmin.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.AdminStatus <> 0 'AndAlso zVarLoginSession.EmailStatus <> 0 
 
         itemTest.Visible = zVarLoginSession.TraineeID > 0 AndAlso zVarLoginSession.TestAvailable = 1
 

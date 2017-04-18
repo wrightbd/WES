@@ -14,7 +14,7 @@
                 <div class="col-sm-6 col-md-4 info">
                     <h2>What Makes World Exercise System the RIGHT CHOICE?</h2>
                     <p>
-                        World Exercise System is an industry leader in Personal Fitness Certification. 
+                        World Exercise System is an industry leader in PERSONAL FITNESS CERTIFICATION. 
                        Our Functional business skills are proven to increase sales, to create client fitness success and retention. 
                        WORLD EXERCISE SYSTEM is THE RIGHT CHOICE!
                     </p>
@@ -78,12 +78,10 @@
     <div id="banner-links" class="banner-links">
         <div class="container">
             <div class="row">
-                <%--<div class="col-md-4">
-                    <div class="member-links"></div>
-                </div>--%>
                 <div class="col-xs-12 col-md-8 center-block text-center">
                     <h2>Get Certified Today!</h2>
                     <p>We will show you how to prepare your clients for each workout. Each workout gets them ready for one thing; which is their next workout.  Our functional business skills are proven to increase sales, to create client fitness success and retention.</p>
+                    <a href="https://www.worldexercisesystem.com/CreateAccount.aspx" class="btn btn-alt">Get Started</a>
                 </div>
             </div>
         </div>
@@ -94,11 +92,11 @@
             <div class="row">
                 <div class="col-md-4 col-md-offset-1">
                     <h2>The BEST Choice for Certification</h2>
-                    <p>Designed by trainers with tens of thousands of client training sessions, the certification developer has more experience with personal training than other certification companies. WES has been in the scientific lab and the gym, for 12hours a day for 30 years. We still have clients that have trained with us consistantly for 30 years.</p>
+                    <p>Designed by trainers with tens of thousands of client training sessions, the certification developer has more experience with personal training than other certification companies. We still have clients that have trained with us consistantly over the past 3 decades.</p>
                 </div>
                 <div class="col-md-6 col-md-offset-1">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NKIX-u-pVDI?ecver=2" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NKIX-u-pVDI?ecver=2?rel=0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

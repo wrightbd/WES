@@ -5,12 +5,19 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div id="banner" class="banner-interior">
+        <img src="~/images/banner-interior.jpg" alt="" runat="server" />
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 page-title">
+                    <h1>Study Guide</h1>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div class="page-header">
-                    <h1>Study Guide</h1>
-                </div>
                 <p>If you wish to study for the Personal Trainer Certification, then you can download the Study Guide below.</p>
                 <p>Below is an exerpt from the Study Guide:</p>
                 <blockquote>

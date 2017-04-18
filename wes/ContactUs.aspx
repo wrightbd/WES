@@ -1,12 +1,19 @@
 ﻿<%@ Page Title="Contact Us" Language="vb" AutoEventWireup="false" MasterPageFile="~/SiteMaster.Master" CodeBehind="ContactUs.aspx.vb" Inherits="WES.ContactUs" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div id="banner" class="banner-interior">
+        <img src="~/images/banner-interior.jpg" alt="" runat="server" />
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 page-title">
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div class="page-header">
-                    <h1>Contact Us</h1>
-                </div>
                 <p>Text coming soon.</p>
             </div>
         </div>

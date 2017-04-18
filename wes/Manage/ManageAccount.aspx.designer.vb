@@ -14,15 +14,6 @@ Option Explicit On
 Partial Public Class ManageAccount
     
     '''<summary>
-    '''scriptManager control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents scriptManager As Global.System.Web.UI.ScriptManager
-    
-    '''<summary>
     '''updateAccountDetails control.
     '''</summary>
     '''<remarks>

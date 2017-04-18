@@ -3,71 +3,58 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server" />
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div id="banner" class="banner-interior">
+        <img src="~/images/banner-interior.jpg" alt="" runat="server" />
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 page-title">
+                    <h1>Choose A Plan</h1>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
-        <asp:Panel ID="pnlAccount" runat="server">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="panel panel-pagetitle">
-                        <div class="panel-heading">
-                            <h3>Your account has been created successfully. An email has been sent to verify your email address.</h3>
-                            <p>Please select the payment plan you wish to purchase below:</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </asp:Panel>
-
-        <div class="well">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <asp:Image ID="imgLogo" runat="server" ImageUrl="~/img/brand_paypal.png" /><br />
-                            <h5>Personal Fitness Trainer</h5>
-                            <h5>Certificate Program</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h5>
-                        <asp:RadioButtonList ID="rblCPT" runat="server" Font-Bold="true">
-                            <asp:ListItem Text="Full Payment of $499.00" Value="1" Selected="True" />
-                            <asp:ListItem Text="(Coming Soon) Two Payments of $285.00" Value="2" Enabled="False" />
-                            <asp:ListItem Text="(Coming Soon) Five Payments of $135.00" Value="3" Enabled="False" />
-                        </asp:RadioButtonList>
-                    </h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 col-sm-offset-3">
-                    <div class="well-sm" style="background-color: white;">
-                        <p>For any program purchase you receive for <span class="text-danger"><strong>FREE</strong></span></p>
-                        <p>All Access to Exclusive E-Book, Study Guide, Materials and Video Center</p>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    &nbsp;
-                </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="lead">3 easy payment options for our Certified Personal Trainer Certificate Exam.</p>
             </div>
         </div>
-
+        
         <div class="row">
-            <div class="col-sm-3 col-sm-offset-9">
-                <div class="panel panel-darkblue">
-                    <div class="panel-heading">
-                        <h4>Promo Code</h4>
-                    </div>
-                    <div class="panel-body">
-                        <asp:TextBox ID="txtPromoCode" runat="server" CssClass="form-control"/>
-                    </div>
+            <div class="col-md-4">
+                <div class="well choose-plan">
+                    <h3><span class="text-success">1</span> Full Time Payment</h3>
+                    <h3><span class="text-danger">$499</span></h3>
+                    <p>Savings of $176<br/>
+                        Lifetime Certificate<br/>
+                        1 Year Access to Member Site<br/>
+                        <span class="text-primary">Best Offer</span>
+                    </p>
+                    <iframe src="paypal-btn-01.html" class="paypal-btn" scrolling="no"></iframe>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12 text-right">
-                <asp:ImageButton ID="btnPurchase" runat="server" ImageUrl="https://www.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" BorderStyle="None" AlternateText="Buy Now" />
-                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            
+            <div class="col-md-4">
+                <div class="well choose-plan">
+                    <h3><span class="text-warning">2</span> Payments</h3>
+                    <h3><span class="text-danger">$285/payment</span></h3>
+                    <p>Savings of $105<br/>
+                        3 Year Certificate<br/>
+                        1 Year Access to Member Site
+                    </p>
+                    <iframe src="paypal-btn-02.html" class="paypal-btn" scrolling="no"></iframe>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="well choose-plan">
+                    <h3><span class="text-danger">5</span> Payments</h3>
+                    <h3><span class="text-danger">$135/payment</span></h3>
+                    <p>2 Year Certificate<br/>
+                        1 Year Access to Member Site
+                    </p>
+                    <iframe src="paypal-btn-03.html" class="paypal-btn" scrolling="no"></iframe>
+                </div>
             </div>
         </div>
     </div>

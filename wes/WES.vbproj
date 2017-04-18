@@ -107,7 +107,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AboutUs.aspx" />
+    <Content Include="AboutTheCompany.aspx" />
     <Content Include="Admin\WESItems.aspx" />
     <Content Include="Admin\WESMediaCenter.aspx" />
     <Content Include="Admin\WESOrders.aspx" />
@@ -117,7 +117,7 @@
     <Content Include="Admin\WESTrainees.aspx" />
     <Content Include="Admin\WESTraineeVideos.aspx" />
     <Content Include="apple-touch-icon.png" />
-    <Content Include="BecomeCPT.aspx" />
+    <Content Include="GetCertified.aspx" />
     <Content Include="ChoosePlan.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="css\images\HomeBackground.jpg" />
@@ -155,6 +155,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="images\01.jpg" />
+    <Content Include="images\banner-interior.jpg" />
     <Content Include="images\banner2.jpg" />
     <Content Include="images\banner3.jpg" />
     <Content Include="images\bg_footer.jpg" />
@@ -168,12 +169,20 @@
     <Content Include="images\ChatKleinpeter.JPG" />
     <Content Include="images\ed-schwartzenburg.jpg" />
     <Content Include="images\EdSchwartzenburg.JPG" />
+    <Content Include="images\get-certified-btn-large.jpg" />
     <Content Include="images\info01.jpg" />
     <Content Include="images\info02.jpg" />
     <Content Include="images\info03.jpg" />
+    <Content Include="images\info04.jpg" />
+    <Content Include="images\info05.jpg" />
+    <Content Include="images\info06.jpg" />
     <Content Include="images\joe-martin.jpg" />
     <Content Include="images\JoeMartin.JPG" />
+    <Content Include="images\paypal-1pay.png" />
+    <Content Include="images\paypal-2pay.png" />
+    <Content Include="images\paypal-4pay.png" />
     <Content Include="images\personaltrainerback.jpg" />
+    <Content Include="images\trainers.jpg" />
     <Content Include="img\brand.png" />
     <Content Include="img\brand_2x.png" />
     <Content Include="img\brand_background.png" />
@@ -198,12 +207,18 @@
     <Content Include="Members\WESPTC.aspx" />
     <Content Include="Mission.aspx" />
     <Content Include="OurTrainers.aspx" />
-    <Content Include="PaymentPlans.aspx" />
+    <Content Include="MakeAPayment.aspx" />
+    <Content Include="paypal-btn-01.html" />
+    <Content Include="paypal-btn-02.html" />
+    <Content Include="paypal-btn-04.html" />
+    <Content Include="paypal-btn-03.html" />
     <Content Include="PurchaseComplete.aspx" />
     <Content Include="Admin\AdminMaster.Master" />
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap.css.map" />
     <Content Include="Franchise-Bold-hinted.woff" />
+    <Content Include="Liability.aspx" />
+    <Content Include="UpgradeMembership.aspx" />
     <None Include="js\vendor\jquery-1.11.3.intellisense.js" />
     <Content Include="js\vendor\jquery-1.11.3.js" />
     <Content Include="js\vendor\jquery-1.11.3.min.js" />
@@ -222,11 +237,11 @@
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutUs.aspx.designer.vb">
-      <DependentUpon>AboutUs.aspx</DependentUpon>
+    <Compile Include="AboutTheCompany.aspx.designer.vb">
+      <DependentUpon>AboutTheCompany.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AboutUs.aspx.vb">
-      <DependentUpon>AboutUs.aspx</DependentUpon>
+    <Compile Include="AboutTheCompany.aspx.vb">
+      <DependentUpon>AboutTheCompany.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Admin\AdminMaster.Master.designer.vb">
@@ -285,6 +300,20 @@
       <DependentUpon>WESTrainees.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Liability.aspx.designer.vb">
+      <DependentUpon>Liability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Liability.aspx.vb">
+      <DependentUpon>Liability.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="UpgradeMembership.aspx.designer.vb">
+      <DependentUpon>UpgradeMembership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpgradeMembership.aspx.vb">
+      <DependentUpon>UpgradeMembership.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Content Include="App_Code\WESPDFHandler.vb" />
     <Compile Include="Admin\WESTraineeVideos.aspx.designer.vb">
       <DependentUpon>WESTraineeVideos.aspx</DependentUpon>
@@ -293,11 +322,11 @@
       <DependentUpon>WESTraineeVideos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="BecomeCPT.aspx.designer.vb">
-      <DependentUpon>BecomeCPT.aspx</DependentUpon>
+    <Compile Include="GetCertified.aspx.designer.vb">
+      <DependentUpon>GetCertified.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BecomeCPT.aspx.vb">
-      <DependentUpon>BecomeCPT.aspx</DependentUpon>
+    <Compile Include="GetCertified.aspx.vb">
+      <DependentUpon>GetCertified.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="ChoosePlan.aspx.designer.vb">
@@ -345,6 +374,7 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IISHandler1.vb" />
     <Compile Include="Login.aspx.designer.vb">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
@@ -448,11 +478,11 @@
       <DependentUpon>OurTrainers.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="PaymentPlans.aspx.designer.vb">
-      <DependentUpon>PaymentPlans.aspx</DependentUpon>
+    <Compile Include="MakeAPayment.aspx.designer.vb">
+      <DependentUpon>MakeAPayment.aspx</DependentUpon>
     </Compile>
-    <Compile Include="PaymentPlans.aspx.vb">
-      <DependentUpon>PaymentPlans.aspx</DependentUpon>
+    <Compile Include="MakeAPayment.aspx.vb">
+      <DependentUpon>MakeAPayment.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="PurchaseComplete.aspx.designer.vb">

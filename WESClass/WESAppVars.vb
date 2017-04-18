@@ -1,4 +1,6 @@
-﻿Imports System.Net
+﻿Imports System.Net.Mail
+Imports System.Configuration
+Imports System.Net
 Imports System.Text.RegularExpressions
 
 Namespace WESAppVars
@@ -8,20 +10,20 @@ Namespace WESAppVars
     End Class
 
     Public Class WebsiteValues
-        Public Shared WebsiteAddress As String = System.Configuration.ConfigurationManager.AppSettings("Website")
+        Public Shared WebsiteAddress As String = ConfigurationManager.AppSettings("Website")
 
-        Public Shared FromAddress As String = System.Configuration.ConfigurationManager.AppSettings("FromAddress")
-        Public Shared FromName As String = System.Configuration.ConfigurationManager.AppSettings("FromName")
+        Public Shared FromAddress As String = ConfigurationManager.AppSettings("FromAddress")
+        Public Shared FromName As String = ConfigurationManager.AppSettings("FromName")
     End Class
 
     Public Class ErrorItems
-        Public Shared ErrorFromAddress As String = System.Configuration.ConfigurationManager.AppSettings("ErrorFromAddress")
-        Public Shared ErrorFromName As String = System.Configuration.ConfigurationManager.AppSettings("ErrorFromName")
-        Public Shared ErrorToAddress As String = System.Configuration.ConfigurationManager.AppSettings("ErrorToAddress")
+        Public Shared ErrorFromAddress As String = ConfigurationManager.AppSettings("ErrorFromAddress")
+        Public Shared ErrorFromName As String = ConfigurationManager.AppSettings("ErrorFromName")
+        Public Shared ErrorToAddress As String = ConfigurationManager.AppSettings("ErrorToAddress")
     End Class
 
     Public Class WESSQLConnection
-        Public Shared connString As String = System.Configuration.ConfigurationManager.ConnectionStrings("WESConnection").ConnectionString
+        Public Shared connString As String = ConfigurationManager.ConnectionStrings("WESConnection").ConnectionString
     End Class
 
     Public Class ErrorLogging
@@ -80,26 +82,26 @@ Namespace WESAppVars
                   NullToString(reqEmailBody) = "" Then
                     Throw New Exception("SendEmail: Missing required fields TO or BODY or Message")
                 Else
-                    Using locNewMessage As New System.Net.Mail.MailMessage()
+                    Using locNewMessage As New MailMessage()
                         ' TO
                         Dim locReqToEmailAddresses() As String = reqEmailAddressTo.Split(";")
                         If locReqToEmailAddresses.Length <> 1 Then
                             For i = 0 To locReqToEmailAddresses.Length - 1
                                 If IsEmailValid(locReqToEmailAddresses(i)) Then
-                                    locNewMessage.To.Add(New System.Net.Mail.MailAddress(locReqToEmailAddresses(i)))
+                                    locNewMessage.To.Add(New MailAddress(locReqToEmailAddresses(i)))
                                 Else
                                     Throw New Exception("SendEmail: One or more TO email addresses (" + locReqToEmailAddresses(i) + ") are mal-formed.")
                                 End If
                             Next
                         Else
                             If IsEmailValid(reqEmailAddressTo) Then
-                                locNewMessage.To.Add(New System.Net.Mail.MailAddress(reqEmailAddressTo))
+                                locNewMessage.To.Add(New MailAddress(reqEmailAddressTo))
                             Else
                                 Throw New Exception("SendEmail: One or more TO email addresses (" + reqEmailAddressTo + ") are mal-formed.")
                             End If
                         End If  ' end email address validation 
                         ' FROM / SUBJECT / BODY
-                        locNewMessage.From = New System.Net.Mail.MailAddress(reqEmailAddressFrom, reqEmailAddressFromDisplayName)
+                        locNewMessage.From = New MailAddress(reqEmailAddressFrom, reqEmailAddressFromDisplayName)
                         locNewMessage.Subject = reqEmailMessage
                         locNewMessage.Body = reqEmailBody
                         ' HTML
@@ -110,10 +112,10 @@ Namespace WESAppVars
                                 Dim locReqAttachments() As String = reqAttachments.Split(";")
                                 If locReqAttachments.Length <> 1 Then
                                     For i = 0 To locReqAttachments.Length - 1
-                                        locNewMessage.Attachments.Add(New System.Net.Mail.Attachment(locReqAttachments(i)))
+                                        locNewMessage.Attachments.Add(New Attachment(locReqAttachments(i)))
                                     Next
                                 Else
-                                    locNewMessage.Attachments.Add(New System.Net.Mail.Attachment(reqAttachments))
+                                    locNewMessage.Attachments.Add(New Attachment(reqAttachments))
                                 End If
                             End If ' end attachments
                         Catch ex As Exception
@@ -126,14 +128,14 @@ Namespace WESAppVars
                                 If locReqCCEmailAddresses.Length <> 1 Then
                                     For i = 0 To locReqCCEmailAddresses.Length - 1
                                         If IsEmailValid(locReqCCEmailAddresses(i)) Then
-                                            locNewMessage.CC.Add(New System.Net.Mail.MailAddress(locReqCCEmailAddresses(i)))
+                                            locNewMessage.CC.Add(New MailAddress(locReqCCEmailAddresses(i)))
                                         Else
                                             Throw New Exception("SendEmail: One or more CC email addresses (" + locReqCCEmailAddresses(i) + ") are mal-formed.")
                                         End If
                                     Next
                                 Else
                                     If IsEmailValid(reqEmailAddressCC) Then
-                                        locNewMessage.To.Add(New System.Net.Mail.MailAddress(reqEmailAddressCC))
+                                        locNewMessage.To.Add(New MailAddress(reqEmailAddressCC))
                                     Else
                                         Throw New Exception("SendEmail: One or more CC email addresses (" + reqEmailAddressCC + ") are mal-formed.")
                                     End If
@@ -149,14 +151,14 @@ Namespace WESAppVars
                                 If locReqBCCEmailAddresses.Length <> 1 Then
                                     For i = 0 To locReqBCCEmailAddresses.Length - 1
                                         If IsEmailValid(reqEmailAddressBCC) Then
-                                            locNewMessage.Bcc.Add(New System.Net.Mail.MailAddress(locReqBCCEmailAddresses(i)))
+                                            locNewMessage.Bcc.Add(New MailAddress(locReqBCCEmailAddresses(i)))
                                         Else
                                             Throw New Exception("SendEmail: One or more BCC email addresses (" + locReqBCCEmailAddresses(i) + ") are mal-formed.")
                                         End If
                                     Next
                                 Else
                                     If IsEmailValid(reqEmailAddressBCC) Then
-                                        locNewMessage.To.Add(New System.Net.Mail.MailAddress(reqEmailAddressBCC))
+                                        locNewMessage.To.Add(New MailAddress(reqEmailAddressBCC))
                                     Else
                                         Throw New Exception("SendEmail: One or more BCC email addresses (" + reqEmailAddressBCC + ") are mal-formed.")
                                     End If
@@ -166,7 +168,16 @@ Namespace WESAppVars
                             Throw New Exception("SendEmail: Problem with Blind Carbon-Copy email addresses." + exNew.Message)
                         End Try
                         ' SEND EMAIL
-                        Dim locNewMailClient2 As New System.Net.Mail.SmtpClient()
+                        Dim locNewMailClient2 As New SmtpClient()
+                        locNewMailClient2.Host = "smtpout.secureserver.net"
+                        locNewMailClient2.Port = 80
+                        locNewMailClient2.EnableSsl = False
+
+                        Dim authInfo As New NetworkCredential("info@worldexercisesystem.com", "Jacque0412")
+
+                        locNewMailClient2.UseDefaultCredentials = False
+                        locNewMailClient2.Credentials = authInfo
+
                         '-- Send Message
                         locNewMailClient2.Send(locNewMessage)
                     End Using
