@@ -28,7 +28,7 @@
                 </h3>
                 <div class="row">
                     <div class="col-xs-12">
-                        <a class="text-center" role="button" href="~/ChoosePlan.aspx" runat="server">
+                        <a class="text-center" role="button" href="https://worldexercisesystem.com/ChoosePlan.aspx">
                             <img src="images/get-certified-btn-large.jpg" alt="Start your CPT Certification Now" class="img-responsive" />
                         </a>
                     </div>

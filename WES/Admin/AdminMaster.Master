@@ -62,6 +62,7 @@
                                 <a class="dropdown-toggle" data-toggle="dropdown">About Us<span class="caret"></span></a>
                                 <ul class="dropdown-menu subnav">
                                     <li><a href="~/AboutTheCompany.aspx" runat="server">About the Company</a></li>
+                                    <li><a href="~/GalleryAndMedia.aspx" runat="server">Gallery and Media</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
