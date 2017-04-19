@@ -39,7 +39,7 @@ Public Class CreateAccount
         If ValidateForm(locMessage) Then
             If CreateAccount(locMessage) Then
                 'ScriptManager.RegisterClientScriptBlock(Page, Page.GetType, "SuccessClientScript", "alert('Account created successfully. An email has been sent to verify your email address.');", True)
-                Response.Redirect("https://www.worldexercisesystem.com/ChoosePlan.aspx")
+                Response.Redirect("~/Members/MemberDashboard.aspx")
             Else
                 ScriptManager.RegisterClientScriptBlock(Page, Page.GetType, "ErrorClientScript", "alert('Error creating your Account:  " + locMessage.Replace("'", "''") + "');", True)
             End If
