@@ -13,11 +13,11 @@ Public Class WESPTC
     Private Property OptionArray As List(Of ClsTestQuestionOption)
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        If zVarLoginSession.TraineeID <= 0 Then
-            Response.Redirect("~/Login.aspx", True)
-        ElseIf zVarLoginSession.TestAvailable = 0 Then
-            Response.Redirect("~/ChoosePlan.aspx", True)
-        End If
+        'If zVarLoginSession.TraineeID <= 0 Then
+        '    Response.Redirect("~/Login.aspx", True)
+        'ElseIf zVarLoginSession.TestAvailable = 0 Then
+        '    Response.Redirect("~/ChoosePlan.aspx", True)
+        'End If
 
         If Not IsPostBack Then
             LoadTest()
