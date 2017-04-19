@@ -88,6 +88,7 @@
                                     <li><a href="~/Members/Videos.aspx" runat="server">Upload Videos</a></li>
                                     <li><a href="~/Members/MediaCenter.aspx" runat="server">Media Center</a></li>
                                     <li id="itemTest" runat="server"><a href="~/Members/WESPTC.aspx" runat="server">Test</a></li>
+                                    <li><a href="~/Members/UpgradeMembership.aspx" runat="server">Upgrade Membership</a></li>
                                 </ul>
                             </li>
                         </ul>

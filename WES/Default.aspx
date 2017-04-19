@@ -30,7 +30,7 @@
                     <h2>Whether you're wanting to gain knowledge for your own fitness program.....
                         Getting started as a fitness professional or an experienced trainer seeking to upgrade your skills.....
                         World Exercise System provides a functional and proven skillset to take you to the next level.</h2>
-                    <a href="https://www.worldexercisesystem.com/CreateAccount.aspx" class="btn btn-alt">Get Started</a>
+                    <a href="https://www.worldexercisesystem.com/ChoosePlan.aspx" class="btn btn-alt">Get Started</a>
                 </div>
             </div>
         </div>
@@ -81,7 +81,7 @@
                 <div class="col-xs-12 col-md-8 center-block text-center">
                     <h2>Get Certified Today!</h2>
                     <p>We will show you how to prepare your clients for each workout. Each workout gets them ready for one thing; which is their next workout.  Our functional business skills are proven to increase sales, to create client fitness success and retention.</p>
-                    <a href="https://www.worldexercisesystem.com/CreateAccount.aspx" class="btn btn-alt">Get Started</a>
+                    <a href="https://www.worldexercisesystem.com/ChoosePlan.aspx" class="btn btn-alt">Get Started</a>
                 </div>
             </div>
         </div>

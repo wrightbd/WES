@@ -305,6 +305,7 @@ h1, .h1 {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d10728', endColorstr='#6b0211',GradientType=0 );
     color: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
+    transition: all ease-out .8s;
 }
 
 .dashboard-tile-mid {

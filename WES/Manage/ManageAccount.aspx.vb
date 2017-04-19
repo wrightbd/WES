@@ -23,7 +23,7 @@ Public Class ManageAccount
             LoadCountry()
             LoadState()
             LoadTrainee()
-            LoadOrders()
+            'LoadOrders()
             LoadTestAttempts()
         Else
             If Not IsNothing(ViewState("WESCOUNTRY")) Then
@@ -137,17 +137,17 @@ Public Class ManageAccount
         End Try
     End Sub
 
-    Protected Sub linqOrders_Selecting(sender As Object, e As LinqDataSourceSelectEventArgs) Handles linqOrders.Selecting
-        Try
-            e.Result = zVarOrders.OrderByDescending(Function(x) x.OrderDate)
-        Catch ex As Exception
-            Dim locErrorHandler As New ErrorLogging
-            Dim locSF As StackFrame = New StackFrame()
-            Dim locMB As MethodBase = locSF.GetMethod()
-            Dim locClass As System.Type = locMB.DeclaringType
-            locErrorHandler.EmailError(locMB.Name + ":Produced EXCEPTION", ex.Message, ex, locMB.Name, locClass.Name)
-        End Try
-    End Sub
+    'Protected Sub linqOrders_Selecting(sender As Object, e As LinqDataSourceSelectEventArgs) Handles linqOrders.Selecting
+    '    Try
+    '        e.Result = zVarOrders.OrderByDescending(Function(x) x.OrderDate)
+    '    Catch ex As Exception
+    '        Dim locErrorHandler As New ErrorLogging
+    '        Dim locSF As StackFrame = New StackFrame()
+    '        Dim locMB As MethodBase = locSF.GetMethod()
+    '        Dim locClass As System.Type = locMB.DeclaringType
+    '        locErrorHandler.EmailError(locMB.Name + ":Produced EXCEPTION", ex.Message, ex, locMB.Name, locClass.Name)
+    '    End Try
+    'End Sub
 
     Protected Sub linqState_Selecting(sender As Object, e As LinqDataSourceSelectEventArgs) Handles linqState.Selecting
         Try
@@ -243,32 +243,32 @@ Public Class ManageAccount
         End Try
     End Sub
 
-    Protected Sub LoadOrders()
-        Try
-            zVarOrders = New List(Of ClsWESOrder)
-            Dim locLoadOrder As New WESOrder_Search
-            Dim locLoadOrderInput As New WESOrder_Search.ClsInputParamsTrainee
-            Dim locLoadOrderResults As New ClsDataSearchReturn
+    'Protected Sub LoadOrders()
+    '    Try
+    '        zVarOrders = New List(Of ClsWESOrder)
+    '        Dim locLoadOrder As New WESOrder_Search
+    '        Dim locLoadOrderInput As New WESOrder_Search.ClsInputParamsTrainee
+    '        Dim locLoadOrderResults As New ClsDataSearchReturn
 
-            locLoadOrderInput.reqTraineeID = zVarLoginSession.TraineeID
-            locLoadOrder.zValInput = locLoadOrderInput
+    '        locLoadOrderInput.reqTraineeID = zVarLoginSession.TraineeID
+    '        locLoadOrder.zValInput = locLoadOrderInput
 
-            If locLoadOrder.zProSearch(locLoadOrderResults) Then
-                zVarOrders = locLoadOrderResults.zValReturnList
-            End If
+    '        If locLoadOrder.zProSearch(locLoadOrderResults) Then
+    '            zVarOrders = locLoadOrderResults.zValReturnList
+    '        End If
 
-            ViewState("WESORDER") = zVarOrders
+    '        ViewState("WESORDER") = zVarOrders
 
-            linqOrders.DataBind()
-            gvOrders.DataBind()
-        Catch ex As Exception
-            Dim locErrorHandler As New ErrorLogging
-            Dim locSF As StackFrame = New StackFrame()
-            Dim locMB As MethodBase = locSF.GetMethod()
-            Dim locClass As System.Type = locMB.DeclaringType
-            locErrorHandler.EmailError(locMB.Name + ":Produced EXCEPTION", ex.Message, ex, locMB.Name, locClass.Name)
-        End Try
-    End Sub
+    '        linqOrders.DataBind()
+    '        gvOrders.DataBind()
+    '    Catch ex As Exception
+    '        Dim locErrorHandler As New ErrorLogging
+    '        Dim locSF As StackFrame = New StackFrame()
+    '        Dim locMB As MethodBase = locSF.GetMethod()
+    '        Dim locClass As System.Type = locMB.DeclaringType
+    '        locErrorHandler.EmailError(locMB.Name + ":Produced EXCEPTION", ex.Message, ex, locMB.Name, locClass.Name)
+    '    End Try
+    'End Sub
 
     Protected Sub LoadTestAttempts()
         Try

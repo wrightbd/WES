@@ -317,13 +317,6 @@
       <DependentUpon>MemberDashboard.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Members\UpgradeMembership.aspx.designer.vb">
-      <DependentUpon>UpgradeMembership.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Members\UpgradeMembership.aspx.vb">
-      <DependentUpon>UpgradeMembership.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Content Include="App_Code\WESPDFHandler.vb" />
     <Compile Include="Admin\WESTraineeVideos.aspx.designer.vb">
       <DependentUpon>WESTraineeVideos.aspx</DependentUpon>
@@ -439,6 +432,13 @@
     <Compile Include="Members\StudyGuide.aspx.vb">
       <DependentUpon>StudyGuide.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Members\UpgradeMembership.aspx.designer.vb">
+      <DependentUpon>UpgradeMembership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Members\UpgradeMembership.aspx.vb">
+      <DependentUpon>UpgradeMembership.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Members\Videos.aspx.designer.vb">
       <DependentUpon>Videos.aspx</DependentUpon>

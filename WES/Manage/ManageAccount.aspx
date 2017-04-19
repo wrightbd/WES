@@ -19,7 +19,6 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active"><a href="#account" aria-controls="account" role="tab" data-toggle="tab">Account</a></li>
-                    <li role="presentation"><a href="#orders" aria-controls="orders" role="tab" data-toggle="tab">Orders</a></li>
                     <li role="presentation"><a href="#tests" aria-controls="tests" role="tab" data-toggle="tab">Tests</a></li>
                     <li role="presentation"><a href="#password" aria-controls="password" role="tab" data-toggle="tab">Password</a></li>
                 </ul>
@@ -120,39 +119,7 @@
                         </asp:UpdatePanel>
 
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="orders">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h4>Orders</h4>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                Order details can be found under your PayPal account.
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <asp:GridView ID="gvOrders" runat="server" DataSourceID="linqOrders" AutoGenerateColumns="False" DataKeyNames="WESOrderID" CssClass="table table-condensed">
-                                    <Columns>
-                                        <asp:BoundField DataField="TraineeName" HeaderText="Trainee Name">
-                                            <ItemStyle HorizontalAlign="Left" />
-                                        </asp:BoundField>
-                                        <asp:BoundField DataField="TestName" HeaderText="Test">
-                                            <ItemStyle HorizontalAlign="Left" />
-                                        </asp:BoundField>
-                                        <asp:BoundField DataField="OrderDate" HeaderText="Order Date" DataFormatString="{0:g}">
-                                            <ItemStyle HorizontalAlign="Left" />
-                                        </asp:BoundField>
-                                        <asp:BoundField DataField="PayPalTransID" HeaderText="Transaction ID">
-                                            <ItemStyle HorizontalAlign="Left" />
-                                        </asp:BoundField>
-                                    </Columns>
-                                </asp:GridView>
-                                <asp:LinqDataSource ID="linqOrders" runat="server" />
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div role="tabpanel" class="tab-pane" id="tests">
                         <asp:UpdatePanel ID="updateTests" runat="server">
                             <ContentTemplate>

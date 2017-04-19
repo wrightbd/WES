@@ -9,8 +9,9 @@
 
 Option Strict On
 Option Explicit On
+
 Namespace Members
 
     Partial Public Class UpgradeMembership
     End Class
-End NameSpace
+End Namespace
