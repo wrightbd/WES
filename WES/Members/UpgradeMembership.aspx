@@ -16,19 +16,20 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <p class="lead">3 easy payment options for our Certified Personal Trainer Certificate Exam.</p>
+                <p class="lead">Continue access to our great member site!</p>
+                <p>Your initial certification comes with 1 year access to our member site.  To continue access after this time, please choose the option below and 
+                    we will upgrade or continue your membership.
+                </p>
             </div>
         </div>
         
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="well choose-plan">
-                    <h3><span class="text-success">1</span> Full Time Payment</h3>
-                    <h3><span class="text-danger">$499</span></h3>
-                    <p>Savings of $176<br/>
-                        Lifetime Certificate<br/>
-                        1 Year Access to Member Site<br/>
-                        <span class="text-primary">Best Offer</span>
+                    <h3><span class="text-success">1</span> Full Payment</h3>
+                    <h3><span class="text-danger">$99</span></h3>
+                    <p>
+                        1 Year Access to Member Site
                     </p>
                     <iframe src="../paypal-btn-04.html" class="paypal-btn" scrolling="no"></iframe>
                 </div>
