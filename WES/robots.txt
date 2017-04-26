@@ -1,2 +1,7 @@
 User-agent: *
-Disallow: *
+Disallow: /Members
+Disallow: /Admin
+Disallow: /Manage
+Allow: /
+Allow: /sitemap.htm
+Sitemap: http://worldexercisesystem.com/sitemap.xml
