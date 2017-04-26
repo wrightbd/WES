@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" MasterPageFile="~/Members/MembersMaster.Master" CodeBehind="MemberDashboard.aspx.vb" Inherits="WES.Members.MemberDashboard" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server"/>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server" />
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="banner" class="banner-interior">
@@ -13,20 +13,11 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <p class="lead">Checkout our quick links and member dashboard below. 
-                    Other options may also be available in the “Members” menu option above. 
-                    Please contact us should you have any issues with the page, process, 
-                    or technical issues at <a href="mailto:web@worldexercisesystem.com">web@worldexercisesystem.com</a>.</p>
-            </div>
-        </div>
-    </div>
-    
+
+
     <div class="dashboard-container">
         <div class="container">
-            
+
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <h2>Three Steps to Completing Your Certification</h2>
@@ -56,7 +47,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <h3>After completion of these 3 steps, we will email your certificate to you.</h3>
@@ -66,10 +57,10 @@
 
         </div>
     </div>
-    
+
     <div class="dashboard-container dashboard-container-mid">
         <div class="container">
-            
+
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <h2>Member Benefits & Options</h2>
@@ -78,12 +69,29 @@
 
             <div class="row">
                 <div class="col-sm-4">
-                    <a href="~/Members/EBook.aspx" class="well dashboard-tile dashboard-tile-mid" runat="server">
+                    <a href="~/Manage/ManageAccount.aspx" class="well dashboard-tile dashboard-tile-mid" runat="server">
+                        <i class="fa fa-users fa-5x"></i>
+                        <h3>Manage Your Account</h3>
+                        <p>Keep your account details updated easily online.</p>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="Docs/WESEBook.pdf" target="_blank" class="well dashboard-tile dashboard-tile-mid">
                         <i class="fa fa-book fa-5x"></i>
                         <h3>Download E-Book</h3>
                         <p>Download our informative E-book with great tips & info.</p>
                     </a>
                 </div>
+
+                <div class="col-sm-4">
+                    <a href="Docs/WESStudyGuide.pdf" target="_blank" class="well dashboard-tile dashboard-tile-mid">
+                        <i class="fa fa-pencil-square fa-5x"></i>
+                        <h3>Download Study Guide</h3>
+                        <p>Download an informative study guide with tips and info on our test.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-sm-4">
                     <a href="~/Members/MediaCenter.aspx" class="well dashboard-tile dashboard-tile-mid" runat="server">
                         <i class="fa fa-play-circle-o fa-5x"></i>
@@ -92,12 +100,29 @@
                     </a>
                 </div>
                 <div class="col-sm-4">
-                    <a href="~/Members/StudyGuide.aspx" class="well dashboard-tile dashboard-tile-mid" runat="server">
-                        <i class="fa fa-pencil-square fa-5x"></i>
-                        <h3>Download Study Guide</h3>
-                        <p>Download an informative study guide with tips and info on our test.</p>
+                    <a href="~/Members/UpgradeMembership.aspx" class="well dashboard-tile dashboard-tile-mid" runat="server">
+                        <i class="fa fa-address-card-o fa-5x"></i>
+                        <h3>Upgrade Membership</h3>
+                        <p>Yearly membership ran out? Click here to resubscribe!</p>
                     </a>
                 </div>
+                <div class="col-sm-4">
+                    <a href="~/ComingSoon.aspx" class="well dashboard-tile dashboard-tile-mid" runat="server">
+                        <i class="fa fa-paper-plane fa-5x"></i>
+                        <h3>Newsletter Signup</h3>
+                        <p>Signup to get important tips, tricks, discounts and more!</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    Please contact us should you have any issues with the page, process, 
+                    or technical issues at <a href="mailto:web@worldexercisesystem.com">web@worldexercisesystem.com</a>.
+                </p>
             </div>
         </div>
     </div>

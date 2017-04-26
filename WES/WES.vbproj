@@ -108,10 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutTheCompany.aspx" />
-    <Content Include="Admin\WESItems.aspx" />
     <Content Include="Admin\WESMediaCenter.aspx" />
-    <Content Include="Admin\WESOrders.aspx" />
-    <Content Include="Admin\WESPromoCode.aspx" />
     <Content Include="Admin\WESTestQuestions.aspx" />
     <Content Include="Admin\WESTests.aspx" />
     <Content Include="Admin\WESTrainees.aspx" />
@@ -247,32 +244,11 @@
       <DependentUpon>AdminMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\WESItems.aspx.designer.vb">
-      <DependentUpon>WESItems.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\WESItems.aspx.vb">
-      <DependentUpon>WESItems.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="Admin\WESMediaCenter.aspx.designer.vb">
       <DependentUpon>WESMediaCenter.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\WESMediaCenter.aspx.vb">
       <DependentUpon>WESMediaCenter.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Admin\WESOrders.aspx.designer.vb">
-      <DependentUpon>WESOrders.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\WESOrders.aspx.vb">
-      <DependentUpon>WESOrders.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Admin\WESPromoCode.aspx.designer.vb">
-      <DependentUpon>WESPromoCode.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\WESPromoCode.aspx.vb">
-      <DependentUpon>WESPromoCode.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Admin\WESTestQuestions.aspx.designer.vb">
@@ -550,7 +526,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>60453</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
