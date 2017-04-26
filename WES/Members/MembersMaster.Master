@@ -98,12 +98,7 @@
                                 <ul class="dropdown-menu subnav">
                                     <li><a href="~/Admin/WesTrainees.aspx" runat="server">Trainees</a></li>
                                     <li><a href="~/Admin/WesTraineeVideos.aspx" runat="server">Trainee Videos</a></li>
-                                    <li><a href="~/Admin/WesTests.aspx" runat="server">Tests</a></li>
                                     <li><a href="~/Admin/WesTestQuestions.aspx" runat="server">Test Questions</a></li>
-                                    <li><a href="~/Admin/WesOrders.aspx" runat="server">Orders</a></li>
-                                    <li><a href="~/Admin/WesPromoCode.aspx" runat="server">Promo Codes</a></li>
-                                    <li><a href="~/Admin/WesMediaCenter.aspx" runat="server">Media Center</a></li>
-                                    <li><a href="~/Admin/WesItems.aspx" runat="server">Miscellaneous Items</a></li>
                                 </ul>
                             </li>
                             <li id="liManage" runat="server" class="dropdown">
