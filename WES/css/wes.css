@@ -91,6 +91,10 @@ h1, .h1 {
     margin-bottom: 60px;
 }
 
+.banner-dashboard {
+    margin: 0;
+}
+
 .info {
     position: absolute;
     bottom: 40px;

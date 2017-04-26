@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server" />
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div id="banner" class="banner-interior">
+    <div id="banner" class="banner-interior banner-dashboard">
         <img src="~/images/banner-interior.jpg" alt="" runat="server" />
         <div class="container">
             <div class="row">
@@ -36,22 +36,21 @@
                     <a href="~/Members/WESPTC.aspx" class="well dashboard-tile dashboard-tile-top" runat="server">
                         <i class="fa fa-file-text fa-5x"></i>
                         <h3>Take Your Certification Test</h3>
-                        <p>If you have already taken your test your results will be displayed.</p>
+                        <p>Take your test after you have paid and recieve a passing grade to continue.</p>
                     </a>
                 </div>
                 <div class="col-sm-4">
                     <a href="~/Members/Videos.aspx" class="well dashboard-tile dashboard-tile-top" runat="server">
                         <i class="fa fa-upload fa-5x"></i>
                         <h3>Upload Your Video for Review</h3>
-                        <p>You must upload a video for review. Once uploaded, we will process.</p>
+                        <p>After receiving a passing grade on the test, proceed to upload your video.</p>
                     </a>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <h3>After completion of these 3 steps, we will email your certificate to you.</h3>
-                    <p>For any questions, contact us at <a href="mailto:info@worldexercisesystem.com">info@worldexercisesystem.com</a>.</p>
+                    <h3>After completion of these 3 steps, we will contact you regarding your certificate.</h3>
                 </div>
             </div>
 
