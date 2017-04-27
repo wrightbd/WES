@@ -3,12 +3,21 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server" />
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+     <div id="banner" class="banner-interior">
+        <img src="~/images/banner-interior.jpg" alt="" runat="server" />
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 page-title">
+                    <h1><asp:Label ID="lblTestName" runat="server"/></h1>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <asp:Panel ID="pnlTest" runat="server">
-                    <h2><asp:Label ID="lblTestName" runat="server"/></h2>
-                    <hr />
+                    
                     <asp:Table ID="tblTest" runat="server"></asp:Table>
                     <asp:HiddenField ID="hiddenTestID" runat="server" />
                     <asp:HiddenField ID="hiddenTraineeID" runat="server" />
