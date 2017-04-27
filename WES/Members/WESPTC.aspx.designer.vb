@@ -14,15 +14,6 @@ Option Explicit On
 Partial Public Class WESPTC
     
     '''<summary>
-    '''pnlTest control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents pnlTest As Global.System.Web.UI.WebControls.Panel
-    
-    '''<summary>
     '''lblTestName control.
     '''</summary>
     '''<remarks>
@@ -30,6 +21,15 @@ Partial Public Class WESPTC
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblTestName As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''pnlTest control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlTest As Global.System.Web.UI.WebControls.Panel
     
     '''<summary>
     '''tblTest control.
