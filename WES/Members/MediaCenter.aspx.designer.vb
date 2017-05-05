@@ -13,23 +13,5 @@ Option Explicit On
 Namespace Members
     
     Partial Public Class MediaCenter
-        
-        '''<summary>
-        '''rptHeaders control.
-        '''</summary>
-        '''<remarks>
-        '''Auto-generated field.
-        '''To modify move field declaration from designer file to code-behind file.
-        '''</remarks>
-        Protected WithEvents rptHeaders As Global.System.Web.UI.WebControls.Repeater
-        
-        '''<summary>
-        '''linqHeaders control.
-        '''</summary>
-        '''<remarks>
-        '''Auto-generated field.
-        '''To modify move field declaration from designer file to code-behind file.
-        '''</remarks>
-        Protected WithEvents linqHeaders As Global.System.Web.UI.WebControls.LinqDataSource
     End Class
 End Namespace

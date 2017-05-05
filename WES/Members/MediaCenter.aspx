@@ -15,27 +15,23 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <asp:Repeater ID="rptHeaders" runat="server" DataSourceID="linqHeaders">
-                    <ItemTemplate>
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <h3><asp:Label runat="server" ID="Label1" Text='<%# Eval("CategoryName") %>' /></h3>
-                            </div>
-                            <div class="panel-body">
-                                <asp:Repeater ID="childRepeater" runat="server">
-                                    <ItemTemplate>
-                                        <div class="col-sm-2 text-center">
-                                            <asp:Image ID="image1" runat="server" ImageUrl='<%# "https://img.youtube.com/vi/" + Eval("WebsiteURL") + "/default.jpg" %>' /><br />
-                                            <asp:HyperLink ID="Link1" runat="server" NavigateUrl='<%# "https://youtu.be/" + Eval("WebsiteURL") %>' Target="_blank" Text='<%# Eval("MediaName") %>' />
-                                        </div>
-                                    </ItemTemplate>
-                                </asp:Repeater>
-                            </div>
-                        </div>
-                    </ItemTemplate>
-                </asp:Repeater>
-                <asp:LinqDataSource ID="linqHeaders" runat="server"/>
+                <h2>Please choose a video to watch:</h2>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2 id="back-video"><i class="fa fa-arrow-right fa-1.5x" aria-hidden="true"></i>Back</h2>
+                <iframe src="https://player.vimeo.com/video/216243444?color=ff0303&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-4">
+                <h2 id="triceps-video"><i class="fa fa-arrow-right fa-1.5x" aria-hidden="true"></i>Triceps</h2>
+                <iframe src="https://player.vimeo.com/video/216245488?color=ff0808&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-4">
+                <h2 id="chest-video"><i class="fa fa-arrow-right fa-1.5x" aria-hidden="true"></i>Chest</h2>
+                <iframe src="https://player.vimeo.com/video/216245588?color=ff0808&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            </div>
+    </div>
     </div>
 </asp:Content>
