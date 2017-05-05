@@ -182,6 +182,7 @@
     <Content Include="images\paypal-2pay.png" />
     <Content Include="images\paypal-4pay.png" />
     <Content Include="images\personaltrainerback.jpg" />
+    <Content Include="images\test-btn.jpg" />
     <Content Include="images\trainers.jpg" />
     <Content Include="img\brand.png" />
     <Content Include="img\brand_2x.png" />
@@ -220,6 +221,7 @@
     <Content Include="js\vendor\jquery-1.11.3.min.js" />
     <Content Include="js\vendor\jquery-ui.js" />
     <Content Include="js\vendor\jquery-ui.min.js" />
+    <Content Include="paypal-btn-test.html" />
     <Content Include="robots.txt" />
     <Content Include="js\wes.js" />
     <Content Include="SignUp.aspx" />
