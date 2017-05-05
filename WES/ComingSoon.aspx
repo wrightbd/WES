@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/SiteMaster.Master" CodeBehind="GetCertified.aspx.vb" Inherits="WES.BecomeCPT" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/SiteMaster.Master" CodeBehind="ComingSoon.aspx.vb" Inherits="WES.ComingSoon" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <meta name="description" content="Our certification encompasses all areas of fitness, from training athletes to senior citizens along with how to run your own personal training business." />
@@ -6,7 +6,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="banner" class="banner-interior">
-        <img src="~/images/banner-interior.jpg" alt="" runat="server" />
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 page-title">

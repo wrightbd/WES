@@ -41,7 +41,7 @@
                     <asp:TextBox ID="txtConfirmPass" runat="server" ClientIDMode="Static" TextMode="Password" CssClass="form-control" placeholder="Confirm Password" />
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-md-12">
                     <h2>Personal Information</h2>
@@ -91,6 +91,13 @@
                     <label for="ddlCountry" class="control-label">Country:</label>
                     <asp:DropDownList ID="ddlCountry" runat="server" ClientIDMode="Static" DataSourceID="linqCountry" DataTextField="CountryName" DataValueField="ZCountryID" AutoPostBack="true" CssClass="form-control" />
                     <asp:LinqDataSource ID="linqCountry" runat="server" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="ckterms" class="control-label">
+                        <input type="checkbox" id="ckterms" name="ckterms" />
+                        Click here accepting our <a href="~/Liability.aspx" target="_blank" runat="server">Liability Disclaimer & Terms</a></label>
                 </div>
             </div>
             <div class="row">

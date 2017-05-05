@@ -11,14 +11,5 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Login
-    
-    '''<summary>
-    '''WESLoginControl1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents WESLoginControl1 As Global.WES.WESLoginControl
+Partial Public Class ThankYou
 End Class

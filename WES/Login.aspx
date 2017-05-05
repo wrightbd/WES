@@ -17,8 +17,6 @@
             <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
                 <div class="well well-lg">
                     <WES:WESLoginControl ID="WESLoginControl1" runat="server" />
-                    Need an account?
-                <asp:HyperLink ID="linkCreateAccount" runat="server" NavigateUrl="https://www.worldexercisesystem.com/CreateAccount.aspx">Create one now.</asp:HyperLink>
                 </div>
             </div>
         </div>

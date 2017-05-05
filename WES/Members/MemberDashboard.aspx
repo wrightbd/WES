@@ -4,7 +4,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="banner" class="banner-interior banner-dashboard">
-        <img src="~/images/banner-interior.jpg" alt="" runat="server" />
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 page-title">
@@ -15,45 +14,11 @@
     </div>
 
 
-    <div class="dashboard-container">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h2>Three Steps to Completing Your Certification</h2>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center three-step">
+                <h2>If you are a new member, <a href="#three-steps">CLICK HERE</a> to complete your certification.</h2>
             </div>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="~/ChoosePlan.aspx" class="well dashboard-tile dashboard-tile-top" runat="server">
-                        <i class="fa fa-cc-paypal fa-5x"></i>
-                        <h3>Pay for Your Certification</h3>
-                        <p>If you have already paid, please proceed to take your test.</p>
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="~/Members/WESPTC.aspx" class="well dashboard-tile dashboard-tile-top" runat="server">
-                        <i class="fa fa-file-text fa-5x"></i>
-                        <h3>Take Your Certification Test</h3>
-                        <p>Take your test after you have paid and recieve a passing grade to continue.</p>
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="~/Members/Videos.aspx" class="well dashboard-tile dashboard-tile-top" runat="server">
-                        <i class="fa fa-upload fa-5x"></i>
-                        <h3>Upload Your Video for Review</h3>
-                        <p>After receiving a passing grade on the test, proceed to upload your video.</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h3>After completion of these 3 steps, we will contact you regarding your certificate.</h3>
-                </div>
-            </div>
-
         </div>
     </div>
 
@@ -71,7 +36,7 @@
                     <a href="~/Manage/ManageAccount.aspx" class="well dashboard-tile dashboard-tile-mid" runat="server">
                         <i class="fa fa-users fa-5x"></i>
                         <h3>Manage Your Account</h3>
-                        <p>Keep your account details updated easily online.</p>
+                        <p>Keep your account details updated easily online. Access your test results here.</p>
                     </a>
                 </div>
                 <div class="col-sm-4">
@@ -115,9 +80,54 @@
             </div>
         </div>
     </div>
+
+    <div class="dashboard-container">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2 id="three-steps">Three Steps to Completing Your Certification</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="~/ChoosePlan.aspx" class="well dashboard-tile dashboard-tile-top" runat="server">
+                        <i class="fa fa-cc-paypal fa-5x"></i>
+                        <h3>Pay for Your Certification</h3>
+                        <p>If you have already paid, please proceed to take your test. 
+                        </p>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="~/Members/WESPTC.aspx" class="well dashboard-tile dashboard-tile-top" runat="server">
+                        <i class="fa fa-file-text fa-5x"></i>
+                        <h3>Take Your Certification Test</h3>
+                        <p>Take your test or re-take the test and recieve a passing grade to continue.
+                        </p>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="~/Members/Videos.aspx" class="well dashboard-tile dashboard-tile-top" runat="server">
+                        <i class="fa fa-upload fa-5x"></i>
+                        <h3>Upload Your Video for Review</h3>
+                        <p>After receiving a passing grade on the test, proceed to upload your video.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h3>After completion of these 3 steps, we will contact you regarding your certificate.</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-12 text-center">
                 <p>
                     Please contact us should you have any issues with the page, process, 
                     or technical issues at <a href="mailto:web@worldexercisesystem.com">web@worldexercisesystem.com</a>.

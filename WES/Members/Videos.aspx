@@ -4,7 +4,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="banner" class="banner-interior">
-        <img src="~/images/banner-interior.jpg" alt="" runat="server" />
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 page-title">
@@ -16,16 +15,17 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h4>Instructions on submitting video for certificate approval:</h4>
-                <ol>
-                    <li>Upload your video to YouTube</li>
+                <h2>Instructions on submitting video for certificate approval:</h2>
+                <ol class="video-list">
+                    <li>You MUST receive a passing grade on your test before you can submit a video.</li>
+                    <li>Upload your video to YouTube or Vimeo</li>
                     <li>Make sure the video is either Public or Unlisted</li>
-                    <li>View the video on YouTube and look at the web address</li>
-                    <li>Copy the characters that appear after: https://www.youtube.com/watch?v= into the textbox below and submit.</li>
+                    <li>View the video on YouTube or Vimeo & copy the web address url in the top bar of your browser & put in box below and press submit.</li>
                     <li>We will send you an email once your video has been reviewed.</li>
                 </ol>
-                <asp:TextBox ID="txtVideoCode" runat="server" Width="200"/>
+                <asp:TextBox ID="txtVideoCode" runat="server" Width="500"/>
                 <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="btn btn-primary" />
+                <h4><i class="fa fa-arrow-right fa-1.5x" aria-hidden="true"></i> <a href="~/Members/MemberDashboard.aspx" runat="server"> RETURN TO MEMBER DASHBOARD</a></h4>
             </div>
         </div>
     </div>

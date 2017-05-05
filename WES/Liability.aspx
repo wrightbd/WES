@@ -16,14 +16,10 @@
         <div class="row">
             <div class="col-xs-12">
                 <p class="lead">
-                    By clicking continue, you agree to the following agreement below. Your acceptance of this agreement is required in order to setup a user account
-                    within our system. Please read below and select "continue & register".
+                    Please read the agreement in it's entirety. Your acceptance of this agreement is required to become a member of our site and to receive certification from World Exercise System.
+                    If you created an account already on our site or were referred by the link on the "Create Account" page, then you must click to agree that you have read and understand this Liability
+                    Agreement. Please visit this page in the future for any changes and updates.
                 </p>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <a class="btn btn-lg btn-danger" role="button" href="~/CreateAccount.aspx" runat="server">Continue & Register</a>
-                    </div>
-                </div>
                 <p>
                     World Exercise System, LLC (“us”, “we”, or “our”) operates worldexercisesystem.com (the “WebSite”).  This Agreement is between World Exercise System, LLC and 
                     Users of the Website.  By accessing or using the Website in any manner, including, but not limited to, visiting or browsing the Website or contributing content 
@@ -79,11 +75,6 @@
                     Users have. This release is an ongoing release and remains in effect indefinitely.
 
                 </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <a class="btn btn-lg btn-danger" role="button" href="~/CreateAccount.aspx" runat="server">Continue & Register</a>
             </div>
         </div>
     </div>

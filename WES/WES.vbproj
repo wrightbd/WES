@@ -114,6 +114,7 @@
     <Content Include="Admin\WESTrainees.aspx" />
     <Content Include="Admin\WESTraineeVideos.aspx" />
     <Content Include="apple-touch-icon.png" />
+    <Content Include="ComingSoon.aspx" />
     <Content Include="GalleryAndMedia.aspx" />
     <Content Include="GetCertified.aspx" />
     <Content Include="ChoosePlan.aspx" />
@@ -221,6 +222,9 @@
     <Content Include="js\vendor\jquery-ui.min.js" />
     <Content Include="robots.txt" />
     <Content Include="js\wes.js" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="sitemap.xml" />
+    <Content Include="ThankYou.aspx" />
     <Content Include="tile-wide.png" />
     <Content Include="tile.png" />
     <Content Include="VerifyEmail.aspx" />
@@ -271,6 +275,13 @@
     <Compile Include="Admin\WESTrainees.aspx.vb">
       <DependentUpon>WESTrainees.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ComingSoon.aspx.designer.vb">
+      <DependentUpon>ComingSoon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComingSoon.aspx.vb">
+      <DependentUpon>ComingSoon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="GalleryAndMedia.aspx.designer.vb">
       <DependentUpon>GalleryAndMedia.aspx</DependentUpon>
@@ -449,12 +460,26 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SignUp.aspx.designer.vb">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.vb">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="SiteMaster.Master.designer.vb">
       <DependentUpon>SiteMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="SiteMaster.Master.vb">
       <DependentUpon>SiteMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThankYou.aspx.designer.vb">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYou.aspx.vb">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="VerifyEmail.aspx.designer.vb">
       <DependentUpon>VerifyEmail.aspx</DependentUpon>

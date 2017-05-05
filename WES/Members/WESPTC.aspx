@@ -4,7 +4,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
      <div id="banner" class="banner-interior">
-        <img src="~/images/banner-interior.jpg" alt="" runat="server" />
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 page-title">

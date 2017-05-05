@@ -7,9 +7,25 @@ p {
     margin: 20px 0;
 }
 
-h1, .h1 {
+h1, .h1, h2, .h2, h4, .h4 {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
+}
+
+h4, .h4 {
+    font-size: 20px;
+}
+
+h4 i {
+    color:#f90;
+}
+
+.three-step h2 {
+    margin: 35px 0 40px 0;
+}
+
+.video-list {
+    padding: 10px 0 10px 30px;
 }
 
 .center-block {
@@ -259,6 +275,10 @@ h1, .h1 {
         font-style: italic;
         font-weight: 300;
         font-size: 22px;
+    }
+
+    #ckterms {
+        padding: 10px 0 25px 0;
     }
 
 .quick-links i {
