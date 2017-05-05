@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 page-title">
-                    <h1>Liability Agreement</h1>
+                    <h1>Thank You</h1>
                 </div>
             </div>
         </div>
