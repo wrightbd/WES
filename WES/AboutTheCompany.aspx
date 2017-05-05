@@ -6,7 +6,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="banner" class="banner-interior">
-        <img src="~/images/banner-interior.jpg" alt="" runat="server" />
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 page-title">
@@ -33,7 +32,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <div class="callout-info callout-info-04">
                             <img src="~/images/info04.jpg" runat="server" class="img-rounded img-responsive" alt="" />
                             <div class="caption">
@@ -41,7 +40,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <div class="callout-info callout-info-05">
                             <img src="~/images/info05.jpg" runat="server" class="img-rounded img-responsive" alt="" />
                             <div class="caption">
@@ -49,7 +48,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <div class="callout-info callout-info-06">
                             <img src="~/images/info06.jpg" runat="server" class="img-rounded img-responsive" alt="" />
                             <div class="caption">
@@ -65,7 +64,7 @@
                 <p>Below are just a few of our testimonials from past clients. They have seen the value and expertise offered by World Exercise System and are proof that our methods and certification work!</p>
 
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <div class="callout-info">
                             <img src="~/images/chat-kleinpeter.jpg" runat="server" class="img-rounded img-responsive" alt="Chat Kleinpeter" />
                                 <h3>Chat Kleinpeter</h3>
@@ -77,7 +76,7 @@
                                 </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <div class="callout-info">
                             <img src="~/images/joe-martin.jpg" runat="server" class="img-rounded img-responsive" alt="Joe Martin" />
                                 <h3>Joe Martin</h3>
@@ -88,7 +87,7 @@
                                 </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <div class="callout-info">
                             <img src="~/images/billy-potter.jpg" runat="server" class="img-rounded img-responsive" alt="Billy Potter" />
                             <h3>Billy Potter</h3>

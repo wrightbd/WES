@@ -11,7 +11,7 @@
         <img src="~/images/01.jpg" alt="World Exercise System" runat="server" />
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-4 info">
+                <div class="col-sm-8 col-md-6 col-lg-4 info">
                     <h2>What Makes World Exercise System the RIGHT CHOICE?</h2>
                     <p>
                         World Exercise System is an industry leader in PERSONAL FITNESS CERTIFICATION. 
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <div class="callout-info callout-info-01">
                         <img src="~/images/info01.jpg" runat="server" class="img-rounded img-responsive" alt=""/>
                         <div class="caption">
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <div class="callout-info callout-info-02">
                         <img src="~/images/info02.jpg" runat="server" class="img-rounded img-responsive" alt=""/>
                         <div class="caption">
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <div class="callout-info callout-info-03">
                         <img src="~/images/info03.jpg" runat="server" class="img-rounded img-responsive" alt=""/>
                         <div class="caption">

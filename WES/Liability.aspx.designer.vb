@@ -10,6 +10,8 @@
 Option Strict On
 Option Explicit On
 
-
-Partial Public Class UpgradeMembership
-End Class
+Namespace Members
+    
+    Partial Public Class UpgradeMembership
+    End Class
+End Namespace
