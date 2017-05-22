@@ -32,8 +32,7 @@
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
                 </style>
                 <div id="mc_embed_signup">
-                    <form action="//worldexercisesystem.us15.list-manage.com/subscribe/post?u=b544bdaba7bf6f37aee6d0edc&amp;id=889b782c7a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
+                    <div id="mc_embed_signup_scroll">
                             <h2>Subscribe to our mailing list</h2>
                             <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
                             <div class="mc-field-group">
@@ -58,9 +57,8 @@
                             <div style="position: absolute; left: -5000px;" aria-hidden="true">
                                 <input type="text" name="b_b544bdaba7bf6f37aee6d0edc_889b782c7a" tabindex="-1" value=""></div>
                             <div class="clear">
-                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" onclick='this.form.action="//worldexercisesystem.us15.list-manage.com/subscribe/post?u=b544bdaba7bf6f37aee6d0edc&amp;id=889b782c7a";this.form.submit();'></div>
                         </div>
-                    </form>
                 </div>
 
                 <!--End mc_embed_signup-->
