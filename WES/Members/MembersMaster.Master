@@ -145,7 +145,6 @@
                                 <ul class="list-unstyled">
                                     <li><i class="fa fa-star"></i> <a href="~/ChoosePlan.aspx" runat="server">Get Your CPT Certification</a></li>
                                     <li><i class="fa fa-star"></i> <a href="~/ContactUs.aspx" runat="server">Want More Info?</a></li>
-                                    <li><i class="fa fa-star"></i> <a href="~/Liability.aspx" runat="server">Liability Agreement</a></li>
                                     <li><i class="fa fa-star"></i> <a href="~/Login.aspx" runat="server">Sign In</a></li>
                                 </ul>
                             </div>
