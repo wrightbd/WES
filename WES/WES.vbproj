@@ -177,6 +177,7 @@
     <Content Include="images\info06.jpg" />
     <Content Include="images\joe-martin.jpg" />
     <Content Include="images\JoeMartin.JPG" />
+    <Content Include="images\paypal-1pay-199-sale.png" />
     <Content Include="images\paypal-1pay.png" />
     <Content Include="images\paypal-1year.png" />
     <Content Include="images\paypal-2pay.png" />
@@ -208,6 +209,7 @@
     <Content Include="Members\UpgradeMembership.aspx" />
     <Content Include="Members\Videos.aspx" />
     <Content Include="Members\WESPTC.aspx" />
+    <Content Include="paypal-btn-promotion.html" />
     <Content Include="paypal-btn-01.html" />
     <Content Include="paypal-btn-02.html" />
     <Content Include="paypal-btn-04.html" />
@@ -216,6 +218,7 @@
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap.css.map" />
     <Content Include="Liability.aspx" />
+    <Content Include="Promotion.aspx" />
     <None Include="js\vendor\jquery-1.11.3.intellisense.js" />
     <Content Include="js\vendor\jquery-1.11.3.js" />
     <Content Include="js\vendor\jquery-1.11.3.min.js" />
@@ -304,6 +307,13 @@
     </Compile>
     <Compile Include="Members\MemberDashboard.aspx.vb">
       <DependentUpon>MemberDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Promotion.aspx.designer.vb">
+      <DependentUpon>Promotion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Promotion.aspx.vb">
+      <DependentUpon>Promotion.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Content Include="App_Code\WESPDFHandler.vb" />
