@@ -20,7 +20,7 @@
         </div>
         <div class="row">
             <div class="col-sm-4">
-                <h4 id="back-video">Back</h3>
+                <h4 id="back-video">Back</h4>
                 <iframe src="https://player.vimeo.com/video/216243444?color=ff0303&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
             <div class="col-sm-4">
@@ -32,7 +32,7 @@
                 <iframe src="https://player.vimeo.com/video/216245588?color=ff0808&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-sm-4">
                 <h4 id="first-workout">Training for First Workouts</h4>
@@ -47,7 +47,7 @@
                 <iframe src="https://player.vimeo.com/video/226367747" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-sm-4">
                 <h4 id="overtraining">Overtraining</h4>
@@ -58,7 +58,15 @@
                 <iframe src="https://player.vimeo.com/video/226365849" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
             <div class="col-sm-4">
-                
+                <h4 id="usta">Usta</h4>
+                <iframe src="https://player.vimeo.com/video/239751529" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-4">
+                <h4 id="no-quit">No Quit</h4>
+                <iframe src="https://player.vimeo.com/video/239751802" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
         </div>
     </div>
