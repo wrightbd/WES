@@ -37,7 +37,7 @@ h4 i {
     min-height: 34px;
 }
 
-.contact {
+.contact, .social {
     float: right;
     margin: 0;
     padding: 6px 0;
@@ -45,17 +45,26 @@ h4 i {
     display: none;
 }
 
-    .contact li {
+.social {
+    float: none;
+    display: block;
+}
+
+    .contact li, .social li {
         list-style: none;
         display: inline-block;
         color: #fff;
     }
 
-        .contact li:last-child {
+        .contact li, .social li {
             margin-left: 12px;
         }
 
-        .contact li a {
+        .contact li:first-child, .social li:first-child {
+            margin-left: 0;
+        }
+
+        .contact li a, .social li a {
             color: #fff;
         }
 

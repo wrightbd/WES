@@ -19,12 +19,8 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="col-sm-4">
-                    <h4 id="no-quit">No Quit</h4>
-                    <iframe src="https://player.vimeo.com/video/239751802" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-                <div class="col-sm-4">
-                    <h4 id="usta">Usta</h4>
-                    <iframe src="https://player.vimeo.com/video/239751529" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <h4 id="about-wes">About WES</h4>
+                    <iframe src="https://player.vimeo.com/video/239752397" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
             </div>
         </div>

@@ -68,6 +68,10 @@
                 <h4 id="no-quit">No Quit</h4>
                 <iframe src="https://player.vimeo.com/video/239751802" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
+            <div class="col-sm-4">
+                <h4 id="nutrition">Nutrition and Diet</h4>
+                <iframe src="https://player.vimeo.com/video/240600958" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 </asp:Content>

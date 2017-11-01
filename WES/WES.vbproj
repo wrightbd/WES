@@ -115,6 +115,7 @@
     <Content Include="Admin\WESTraineeVideos.aspx" />
     <Content Include="apple-touch-icon.png" />
     <Content Include="ComingSoon.aspx" />
+    <Content Include="FlashSale.aspx" />
     <Content Include="GalleryAndMedia.aspx" />
     <Content Include="GetCertified.aspx" />
     <Content Include="ChoosePlan.aspx" />
@@ -182,6 +183,7 @@
     <Content Include="images\paypal-1year.png" />
     <Content Include="images\paypal-2pay.png" />
     <Content Include="images\paypal-4pay.png" />
+    <Content Include="images\paypal-flash99.png" />
     <Content Include="images\personaltrainerback.jpg" />
     <Content Include="images\test-btn.jpg" />
     <Content Include="images\trainers.jpg" />
@@ -209,6 +211,7 @@
     <Content Include="Members\UpgradeMembership.aspx" />
     <Content Include="Members\Videos.aspx" />
     <Content Include="Members\WESPTC.aspx" />
+    <Content Include="paypal-btn-flash-sale.html" />
     <Content Include="paypal-btn-promotion.html" />
     <Content Include="paypal-btn-01.html" />
     <Content Include="paypal-btn-02.html" />
@@ -287,6 +290,13 @@
     <Compile Include="ComingSoon.aspx.vb">
       <DependentUpon>ComingSoon.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FlashSale.aspx.designer.vb">
+      <DependentUpon>FlashSale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FlashSale.aspx.vb">
+      <DependentUpon>FlashSale.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="GalleryAndMedia.aspx.designer.vb">
       <DependentUpon>GalleryAndMedia.aspx</DependentUpon>

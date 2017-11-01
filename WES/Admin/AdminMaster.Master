@@ -7,14 +7,14 @@
     <title>World Exercise System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
-    
+
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Roboto+Condensed:300i,400|Roboto:400,500" rel="stylesheet" />
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
     <link href="../css/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="../css/jquery-ui.min.css" rel="stylesheet" />
     <link href="../css/jquery-ui.structure.min.css" rel="stylesheet" />
     <link href="../css/wes.css" rel="stylesheet" />
-    
+
     <script src="../js/vendor/jquery-1.11.3.min.js"></script>
     <script src="../js/vendor/bootstrap.min.js"></script>
     <script src="../js/vendor/jquery-ui.min.js"></script>
@@ -22,8 +22,8 @@
 
     <meta name="robots" content="noindex, nofollow, nosnippet" />
 
-    <asp:ContentPlaceHolder ID="head" runat="server"/>
-    
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -35,8 +35,10 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <ul class="contact">
-                                <li><i class="fa fa-phone"></i> <a href="tel:2257734383">(225) 773-4383</a></li>
-                                 <li><i class="fa fa-envelope"></i> <a href="mailto:info@worldexercisesystem.com">info@worldexercisesystem.com</a></li>
+                                <li><i class="fa fa-phone"></i><a href="tel:2257734383">(225) 773-4383</a></li>
+                                <li><i class="fa fa-envelope"></i><a href="mailto:info@worldexercisesystem.com">info@worldexercisesystem.com</a></li>
+                                <li><a href="https://www.facebook.com/worldexercisesystem" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                                <li><a href="https://twitter.com/wexercisesystem" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -129,15 +131,19 @@
                                     <span>(225) 773-4383</span><br />
                                     <a href="mailto:info@worldexercisesystem.com">info@worldexercisesystem.com</a>
                                 </p>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/worldexercisesystem" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a></li>
+                                    <li><a href="https://twitter.com/wexercisesystem" target="_blank"><i class="fa fa-2x fa-twitter-square"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="quick-links">
                                 <h3>Quick Links</h3>
                                 <ul class="list-unstyled">
-                                    <li><i class="fa fa-star"></i> <a href="~/ChoosePlan.aspx" runat="server">Get Your CPT Certification</a></li>
-                                    <li><i class="fa fa-star"></i> <a href="~/ContactUs.aspx" runat="server">Want More Info?</a></li>
-                                    <li><i class="fa fa-star"></i> <a href="~/Login.aspx" runat="server">Sign In</a></li>
+                                    <li><i class="fa fa-star"></i><a href="~/ChoosePlan.aspx" runat="server">Get Your CPT Certification</a></li>
+                                    <li><i class="fa fa-star"></i><a href="~/ContactUs.aspx" runat="server">Want More Info?</a></li>
+                                    <li><i class="fa fa-star"></i><a href="~/Login.aspx" runat="server">Sign In</a></li>
                                 </ul>
                             </div>
                         </div>
