@@ -28,5 +28,20 @@
                 <h4><i class="fa fa-arrow-right fa-1.5x" aria-hidden="true"></i> <a href="~/Members/MemberDashboard.aspx" runat="server"> RETURN TO MEMBER DASHBOARD</a></h4>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>How To Upload:</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-2">
+                <h4 id="back-video">Example Video Upload #1</h4>
+                <iframe src="https://player.vimeo.com/video/246795361?color=ff0303&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-4">
+                <h4 id="triceps-video">Example Video Upload #2</h4>
+                <iframe src="https://player.vimeo.com/video/246797517?color=ff0808&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
 </asp:Content>

@@ -56,11 +56,5 @@
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-xs-12">
-                <iframe src="paypal-btn-test.html" scrolling="no"></iframe>
-            </div>
-        </div>
     </div>
 </asp:Content>
